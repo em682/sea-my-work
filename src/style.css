@@ -48,13 +48,14 @@ h1{
 }
 .content h2{
     padding-left: 5vh;
-    font-family: 'Montserrat';
+    font-family: 'Bungee';
     font-weight: bold;
-    line-height: 1.5em;
+    line-height: 2em;
     font-size: 2.5vw;
     color:#fff;
     background-color: transparent;
     margin-bottom: 5vh;
+    letter-spacing: 0.185em;
 }
 .content p{
     margin-bottom: 5vh;
@@ -65,6 +66,18 @@ h1{
     font-size: 2vw;
     color:#fff;
     background-color: transparent;
+}
+.content a{
+    font-family: 'Cabin';
+    line-height: 1.5em;
+    font-size: 2vw;
+    color:#fff;
+    background-color: transparent;
+    text-decoration: none;
+}
+.content a:hover{
+    text-align: center;
+    text-decoration: underline;
 }
 .sun{
     position: absolute;
@@ -103,7 +116,7 @@ h1{
 }
 .nav button:hover {
     font-size: 2.6vw;
-    color:#b28bc0;
+    color:#f4afc2;
 }
 .nav nav{
     padding-left: 40vw;
@@ -113,6 +126,12 @@ h1{
 .special{
     text-align: center;
     font-family: 'Bungee';
+    letter-spacing: 0.185em;
+    line-height: 2em;
+}
+.center{
+    margin-top: 50px;
+    text-align: center;
 }
 .icon-links{
     display: flex;
@@ -131,23 +150,28 @@ h1{
 
 .turt {
     position: absolute;
-    animation: sampleanimation 20s infinite;
+    animation: turtleSwim 20s infinite;
     animation-timing-function: linear;
   }
   
-  @keyframes sampleanimation {
+  @keyframes turtleSwim {
     0% {
-        right: 10vw
+        right: 0vw;
+        opacity: 0;
     }
     25% {
         right: 40vw;
+        opacity: 1;
+       
     }
     50% {
         right: 70vw;
+        opacity: 1;
       
     }
     75% {
         right: 100vw;
+        opacity: 0;
       
     }
   }

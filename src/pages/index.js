@@ -2,7 +2,7 @@ import React, {useEffect,useRef} from "react";
 import lottie from "lottie-web/build/player/lottie_light";
 import turtle from "../animations/turtle.json";
 import whale from "../animations/whale.json";
-import sun from '../assets/sun.png';
+import sun from '../assets/sun2.png';
 import birds from '../assets/birds.png';  
 import Wave from 'react-wavify';
 import "../style.css"
@@ -34,7 +34,7 @@ export default function Home() {
   const goToProjects = () => scrollToRef(projRef);
   return (
     <div style={{backgroundColor:"#0097FF"}}>
-      <header className="header" style={{backgroundImage: 'linear-gradient(#f4afc2,#b28bc0)'}}>
+      <header className="header" style={{backgroundImage: 'linear-gradient(#b28bc0,#f4afc2)'}}>
       <img src={sun} alt="Sun" className="sun"/>
       <img src={birds} alt="Seagulls" className="birds"/>
             <div className="nav">
@@ -46,24 +46,13 @@ export default function Home() {
             </div>
             <Wave 
                 className="wave"
-                fill='#00a8ff'
-                paused={false}
-                options={{
-                height: 50,
-                amplitude: 150,
-                speed: 0.15,
-                points: 3
-                }}
-            />
-            <Wave 
-                className="wave"
                 fill='#0266c8'
                 paused={false}
                 options={{
-                height: 40,
-                amplitude: 80,
-                speed: 0.15,
-                points: 5,
+                  height: 10,
+                  amplitude: 20,
+                  speed: 0.15,
+                  points: 3
                 }}
             />
       </header>
@@ -78,7 +67,7 @@ export default function Home() {
         <p>I dont have many skills but im good at coding lol. 
         </p>
 
-        <div className="turt" style={{width:'20vw',marginLeft:'70vw',}}id="turtle" />
+        <div className="turt" style={{width:'20vw',right:0,opacity:0}}id="turtle" />
         
         <h2 ref={projRef} style={{marginTop:'30vh',paddingTop:'5vh'}}>Projects</h2>
         <div className="projects">
@@ -88,7 +77,7 @@ export default function Home() {
         </div>
            <div style={{width:'40vw',margin:'auto'}} id="whale" />
 
-        <h1 className="special" style={{color:"#FD7014"}}>Let's Connect!</h1>
+        <h1 className="special" style={{color:"#00a8ff"}}>Let's Connect!</h1>
 
         <div className='icon-links'>
           <AiFillLinkedin color="#fff" size={"10vw"}/>
@@ -96,8 +85,10 @@ export default function Home() {
           <AiFillInstagram color="#fff" size={"10vw"}/>
           <AiFillMail color="#fff" size={"10vw"}/>
         </div>
-        <p>Designed and built by Ethan Ma</p>
-        <p>Lottie Animations used from
+        <div style={{textAlign:'center'}}>
+          <a className='center' href="https://github.com/em682/ocean-portfolio">Designed and built by Ethan Ma</a>
+        </div>
+        <p className='center'> Lottie Animations used from
           @shafiu / LottieFiles @shafiu / LottieFiles</p>
         
       </div>

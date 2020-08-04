@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
 @import url('https://fonts.googleapis.com/css?family=Bungee');
 @import url('https://fonts.googleapis.com/css?family=Baloo');
 @import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 
 html,body{
     width: 100%;
@@ -15,12 +18,11 @@ html,body{
     padding: 0;
     border: 0;
     outline: 0;
-    background-color: transparent;
     
 }
-.nav h1{
+h1{
     padding-left: 5vh;
-    font-family: 'Bungee';
+    font-family: 'Bungee Shade';
     font-size: 3vw;
     color:	#003062;
     background-color: transparent;
@@ -46,7 +48,8 @@ html,body{
 }
 .content h2{
     padding-left: 5vh;
-    font-family: 'Baloo';
+    font-family: 'Montserrat';
+    font-weight: bold;
     line-height: 1.5em;
     font-size: 2.5vw;
     color:#fff;
@@ -91,12 +94,16 @@ html,body{
 .nav button {
     font-family: 'Bungee';
     text-decoration: none;
-    font-size: 3vw;
+    font-size: 2.5vw;
     color:#003062;
     margin-Top:10;
     font-weight: bold;
-    padding-right: 1em;
+    margin-right: 2em;
     background-color: transparent;
+}
+.nav button:hover {
+    font-size: 2.6vw;
+    color:#b28bc0;
 }
 .nav nav{
     padding-left: 40vw;
@@ -105,6 +112,7 @@ html,body{
 }
 .special{
     text-align: center;
+    font-family: 'Bungee';
 }
 .icon-links{
     display: flex;
@@ -119,3 +127,27 @@ html,body{
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+
+.turt {
+    position: absolute;
+    animation: sampleanimation 20s infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes sampleanimation {
+    0% {
+        right: 10vw
+    }
+    25% {
+        right: 40vw;
+    }
+    50% {
+        right: 70vw;
+      
+    }
+    75% {
+        right: 100vw;
+      
+    }
+  }

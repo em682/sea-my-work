@@ -2,9 +2,17 @@ import React from "react";
 import "../style.css";
 import sun from '../assets/sun.png'; 
 import Wave from 'react-wavify';
-
+import lottie from "lottie-web/build/player/lottie_light";
+import scroll from "../animations/scroll.json";
 export default function Header({executeScroll}) {
-
+    useEffect(() => {
+        lottie.loadAnimation({
+          container: document.querySelector("scroll"),
+          animationData: scroll,
+          loop: true, 
+      autoplay: true
+        });
+    });
     return(
         <div>
             <img src={sun} alt="Sun" className="sun"/>
@@ -37,6 +45,7 @@ export default function Header({executeScroll}) {
                 points: 5,
                 }}
             />
+            <div style={{width:200}} id="scroll" />
            
         </div>
     )

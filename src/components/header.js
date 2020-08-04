@@ -12,7 +12,7 @@ export default function Header({executeScroll}) {
                 <h1>Ethan Ma</h1>
                 <nav>
                     <button onClick={executeScroll}>About</button> 
-                    <button onClick={executeScroll}>Projects</button> 
+                    <button onClick={document.getElementById('Projects').scrollIntoView}>Projects</button> 
                 </nav>
             </div>
             <Wave 
@@ -20,8 +20,8 @@ export default function Header({executeScroll}) {
                 fill='#53DAFA'
                 paused={false}
                 options={{
-                height: 50,
-                amplitude: 150,
+                height: '10vw',
+                amplitude: '20vw',
                 speed: 0.15,
                 points: 3
                 }}
@@ -31,8 +31,8 @@ export default function Header({executeScroll}) {
                 fill='#0097FF'
                 paused={false}
                 options={{
-                height: 40,
-                amplitude: 80,
+                height: '8vw',
+                amplitude: '15vw',
                 speed: 0.15,
                 points: 5,
                 }}

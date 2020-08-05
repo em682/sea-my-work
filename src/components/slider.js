@@ -16,12 +16,15 @@ export default function ProjectSlider(){
     return (
       <div className = "slider">
         <Slider {...settings}>
-            
-          <Project id={0}/>
-          
-          <Project id={1}/>
-          
-          <Project id={2}/>
+            <div>
+            <Project id={0}/>
+            </div>
+            <div>
+            <Project id={1}/>
+            </div>
+            <div>
+            <Project id={2}/>
+            </div>
           
         </Slider>
       </div>

@@ -48,7 +48,7 @@ export default function Project({id}) {
                 <div className='descCard'>
                     <p className="title">Music Taste</p>
                     <p className="desc">Using pandas and Jupyter notebook, I performed data analysis on my listening 
-                    trends based on data from the Spotify web API.</p>
+                    trends based on data from the Spotify web API. Data was then visualized with Infogram.</p>
                     <div className="external">
                         <a href="https://github.com/em682/music-taste">
                                 <FiGithub color="#fff" size={"3vw"} />
@@ -73,9 +73,9 @@ export default function Project({id}) {
                 </div>
                 <div className='descCard'>
                     <p className="title">Calisthenics</p>
-                    <p className="desc">Created a basic website to practice backend development and database querying. List of exercises with tags and descriptions.</p>
+                    <p className="desc">Created a basic website to practice backend development and database querying. 
+                    The site has a list of exercises with tags and descriptions, allowing users to upload their own pictures.</p>
                     <div className="external">
-                        
                         <a href="https://serene-forest-61580.herokuapp.com/index.php">
                             <FiExternalLink color="#fff" size={"3vw"} />
                         </a>

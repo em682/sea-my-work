@@ -61,14 +61,13 @@ export default function Home() {
             />
       </header>
       <div className="content" style={{backgroundImage: 'linear-gradient(#0266c8,#003062)' }}>
-
-        <h2 style={{paddingTop:'2vw'}}ref={aboutRef}>About Me</h2>
+        <h2 style={{paddingTop:'50px'}}ref={aboutRef}>About Me</h2>
         <div style={{display:'flex',flexDirection:'row'}}>
           <img src={me} alt="That's me" className= "me"/>
           <div className= "aboutCard">
             <p>Hey! I'm Ethan, a junior studying information science at Cornell University. I am interested in front end development 
               with working experience in using React and React Native.
-              I also have an interest in data science and would love to delve deeper into it. 
+              I also have an interest in data science and would love to delve deeper into it. I am huge problem solver with a great work ethic.
               My interests are mainly dancing, basketball, and rock climbing.
             </p>
             <div style={{ paddingTop: '150px'}}>

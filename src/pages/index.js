@@ -7,11 +7,21 @@ import birds from '../assets/birds.png';
 import Wave from 'react-wavify';
 import "../default.css"
 import Project from "../components/project"
+import ProjectSlider from"../components/slider"
 import { AiFillLinkedin,AiFillGithub,AiFillInstagram,AiFillMail } from 'react-icons/ai';
+import { useMediaQuery } from 'react-responsive'
 
 const scrollToRef = (ref) => window.scrollTo({top:ref.current.offsetTop,behavior: 'smooth'}) 
 
 export default function Home() {
+  
+  // media queries
+  
+  const isMobile = useMediaQuery({ query: '(max-width: 600px)' })
+  
+  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+  
+
   useEffect(() => {
     lottie.loadAnimation({
       container: document.querySelector("#whale"),
@@ -61,23 +71,22 @@ export default function Home() {
             />
       </header>
       <div className="content" style={{backgroundImage: 'linear-gradient(#0266c8,#003062)' }}>
-
-        <h2 style={{paddingTop:'5vw'}}ref={aboutRef}>About Me</h2>
-        <div style={{display:'flex',flexDirection:'row'}}>
+        <h2 className ="aboutTitle" ref={aboutRef}>About Me</h2>
+        <div className='about'>
           <img src={me} alt="That's me" className= "me"/>
           <div className= "aboutCard">
-            <p>I am a junior studying information science at Cornell University. I am interested in front end development 
+            <p>Hey! I'm Ethan, a junior studying information science at Cornell University. I am interested in front end development 
               with working experience in using React and React Native.
-              I also have an interest in data science and would love to delve deeper into it. 
+              I also have an interest in data science and would love to delve deeper into it.
               My interests are mainly dancing, basketball, and rock climbing.
             </p>
-            <div style={{ paddingTop: '150px'}}>
-            <p className="skills">
-              Languages: HTML/CSS, Javascript, Java, and Python
-            </p>
-            <p className="skills">
-              Technologies: ReactJS, GatsbyJS, React Native, pandas, and scikit-learn
-            </p>
+            <div className="skillsContainer">
+              <p className="skills">
+                Languages: HTML/CSS, Javascript, Java, and Python
+              </p>
+              <p className="skills">
+                Technologies: ReactJS, GatsbyJS, React Native, pandas, and scikit-learn
+              </p>
             </div>
             
           </div>
@@ -85,14 +94,22 @@ export default function Home() {
         <p>
         </p>
 
-        <div className="turt" style={{width:'20vw',right:0,opacity:0}}id="turtle" />
+        <div className="turt" style={{width:'250px',right:0,opacity:0}}id="turtle" />
         
-        <h2 ref={projRef} style={{marginTop:'200px',paddingTop:'5vw'}}>Projects</h2>
+        <h2 ref={projRef} style={{marginTop:'200px',paddingTop:'2vw'}}>Projects</h2>
+
+
+      {isMobile ? 
+      <div style={{width:'60vw',justifyContent:'center',margin:'auto'}}>
+        <ProjectSlider/> 
+      </div>
+        :
         <div className="projects">
               <Project id ={0}/>
               <Project id ={1}/>
               <Project/>
-        </div>
+        </div> 
+      }
            <div style={{width:'40vw',margin:'auto'}} id="whale" />
 
         <h2  ref={contactRef} className="special">Let's Connect!</h2>

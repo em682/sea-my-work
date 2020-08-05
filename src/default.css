@@ -459,7 +459,7 @@ html,body{
 .projectContainer{
     justify-content:center;
     align-items:center;
-    width: 500px;
+    width: 60vw;
 }
 .projects{
     display: flex;
@@ -469,11 +469,11 @@ html,body{
     margin-right: 2.5vw;
 }
 .img{
-   width:500px;
+   width:60vw;
    min-height: calc(200px + 5vw);
 }
 .desc{
-    width:480px;
+    width:58vw;
     font-size: calc(8px + 1vw);
     margin:auto;
     font-family: 'Cabin';
@@ -485,7 +485,7 @@ html,body{
 }
 .overlay{
     position: absolute;
-    width:500px;
+    width:60vw;
     min-height: calc(200px + 5vw);
     background-color: transparent;
     border-radius: calc(12px + 1vw);
@@ -498,7 +498,7 @@ html,body{
 }
 .projectImg{
     background-color: #fff;
-    width: 500px;
+    width: 60vw;
     min-height: calc(200px + 5vw);
     border-radius: calc(12px + 1vw);
     justify-content: center;
@@ -509,7 +509,7 @@ html,body{
 .descCard{
     background-color: #003063;
     margin-top: 20px;
-    width: 500px;
+    width: 60vw;
     min-height: calc(200px + 5vw);
     border-radius: calc(12px + 1vw);
     justify-content: center;

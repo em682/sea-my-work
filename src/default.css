@@ -407,7 +407,7 @@ html,body{
     padding-bottom:10px;
 }
 .skillsContainer p{
-    font-size: calc(8px + 1vw);
+    font-size: calc(12px + 1vw);
     padding-left:20;
     padding-right:20;
     padding-top: 0;
@@ -463,13 +463,13 @@ html,body{
 }
 .projects{display: none !important;}
 .slider{
-    width:60vw;
+    width:70vw;
     margin:auto;
 }
 .projectContainer{
     justify-content:center;
     align-items:center;
-    width: 60vw;
+    width: 70vw;
 }
 .projects{
     display: flex;
@@ -479,12 +479,12 @@ html,body{
     margin-right: 2.5vw;
 }
 .img{
-   width:60vw;
-   min-height: calc(200px + 5vw);
+   width:70vw;
+   min-height: calc(210px + 5vw);
 }
 .desc{
-    width:56vw;
-    font-size: calc(8px + 1vw);
+    width:66vw;
+    font-size: calc(12px + 1vw);
     margin:auto;
     font-family: 'Cabin';
     line-height: 1.5em;
@@ -495,8 +495,8 @@ html,body{
 }
 .overlay{
     position: absolute;
-    width:60vw;
-    min-height: calc(200px + 5vw);
+    width:70vw;
+    min-height: calc(210px + 5vw);
     background-color: transparent;
     border-radius: calc(12px + 1vw);
     opacity: 0;
@@ -508,8 +508,8 @@ html,body{
 }
 .projectImg{
     background-color: #fff;
-    width: 60vw;
-    min-height: calc(200px + 5vw);
+    width: 70vw;
+    min-height: calc(210px + 5vw);
     border-radius: calc(12px + 1vw);
     justify-content: center;
     align-items: center;
@@ -519,7 +519,7 @@ html,body{
 .descCard{
     background-color: #003063;
     margin-top: 20px;
-    width: 60vw;
+    width: 70vw;
     min-height: calc(200px + 5vw);
     border-radius: calc(12px + 1vw);
     justify-content: center;

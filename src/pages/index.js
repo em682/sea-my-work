@@ -98,8 +98,9 @@ export default function Home() {
         
         <h2 ref={projRef} style={{marginTop:'200px',paddingTop:'2vw'}}>Projects</h2>
 
-
-        <SimpleSlider/> 
+        <div className="projectsMobile">
+          <SimpleSlider/> 
+        </div>
         <div className="projects">
               <Project id ={0}/>
               <Project id ={1}/>

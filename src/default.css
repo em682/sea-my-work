@@ -198,6 +198,9 @@ html,body{
     margin-bottom: 5vw;
 }
 /* Projects*/
+.projectsMobile{
+    display: none;
+}
 .projectContainer{
     justify-content:center;
     align-items:center;
@@ -325,7 +328,7 @@ html,body{
         position: absolute;
         width:150px;
         height:150px;
-        right:100px;
+        right:50px;
         top:20px;
         z-index: 5;
         background-color: #FD5E53;
@@ -455,6 +458,10 @@ html,body{
 }
 
 /*Projects*/
+.projectsMobile{
+    display: block;
+}
+.projects{display: none !important;}
 .slider{
     width:60vw;
     margin:auto;

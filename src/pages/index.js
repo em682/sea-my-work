@@ -9,10 +9,19 @@ import "../default.css"
 import Project from "../components/project"
 import ProjectSlider from"../components/slider"
 import { AiFillLinkedin,AiFillGithub,AiFillInstagram,AiFillMail } from 'react-icons/ai';
+import { useMediaQuery } from 'react-responsive'
 
 const scrollToRef = (ref) => window.scrollTo({top:ref.current.offsetTop,behavior: 'smooth'}) 
 
 export default function Home() {
+  
+  // media queries
+  
+  const isMobile = useMediaQuery({ query: '(max-width: 600px)' })
+  
+  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+  
+
   useEffect(() => {
     lottie.loadAnimation({
       container: document.querySelector("#whale"),
@@ -85,15 +94,22 @@ export default function Home() {
         <p>
         </p>
 
-        <div className="turt" style={{width:'20vw',right:0,opacity:0}}id="turtle" />
+        <div className="turt" style={{width:'250px',right:0,opacity:0}}id="turtle" />
         
         <h2 ref={projRef} style={{marginTop:'200px',paddingTop:'2vw'}}>Projects</h2>
+
+
+      {isMobile ? 
+      <div style={{width:'60vw',justifyContent:'center',margin:'auto'}}>
+        <ProjectSlider/> 
+      </div>
+        :
         <div className="projects">
               <Project id ={0}/>
               <Project id ={1}/>
               <Project/>
         </div> 
-
+      }
            <div style={{width:'40vw',margin:'auto'}} id="whale" />
 
         <h2  ref={contactRef} className="special">Let's Connect!</h2>

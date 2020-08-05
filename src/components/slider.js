@@ -15,13 +15,15 @@ export default function ProjectSlider(){
 
     return (
       <Slider {...settings}>
-        
-         <Project id={1}/>
-        
-        
-        <Project id={2}/>
-        
-        <Project id={3}/>
+        <div style={{marginLeft:'10px'}}>
+          <Project id={0}/>
+        </div>
+        <div style={{marginLeft:'10px'}}>
+          <Project id={1}/>
+        </div>
+        <div style={{marginLeft:'10px'}}>
+          <Project id={2}/>
+        </div>
         
       </Slider>
     );

@@ -308,7 +308,7 @@ html,body{
     .nav button {
         font-family: 'Bungee';
         text-decoration: none;
-        font-size: calc(12px + 1vw);
+        font-size: calc(20px + 1vw);
         color:#003063;
         margin-Top:10;
         font-weight: bold;
@@ -318,7 +318,7 @@ html,body{
         letter-spacing: 0.1em;
     }
     .nav button:hover {
-        font-size: calc(16px + 1vw);
+        font-size: calc(24px + 1vw);
         color:#b28bc0;
     }
     .sun{
@@ -459,7 +459,7 @@ html,body{
 .projectContainer{
     justify-content:center;
     align-items:center;
-    width: 60vw;
+    width: 500px;
 }
 .projects{
     display: flex;
@@ -469,11 +469,11 @@ html,body{
     margin-right: 2.5vw;
 }
 .img{
-   width:60vw;
+   width:500px;
    min-height: calc(200px + 5vw);
 }
 .desc{
-    width: 58vw;
+    width:480px;
     font-size: calc(8px + 1vw);
     margin:auto;
     font-family: 'Cabin';
@@ -485,7 +485,7 @@ html,body{
 }
 .overlay{
     position: absolute;
-    width:60vw;
+    width:500px;
     min-height: calc(200px + 5vw);
     background-color: transparent;
     border-radius: calc(12px + 1vw);
@@ -498,7 +498,7 @@ html,body{
 }
 .projectImg{
     background-color: #fff;
-    width: 60vw;
+    width: 500px;
     min-height: calc(200px + 5vw);
     border-radius: calc(12px + 1vw);
     justify-content: center;
@@ -509,7 +509,7 @@ html,body{
 .descCard{
     background-color: #003063;
     margin-top: 20px;
-    width: 60vw;
+    width: 500px;
     min-height: calc(200px + 5vw);
     border-radius: calc(12px + 1vw);
     justify-content: center;

@@ -14,8 +14,8 @@ export default function Project({id}) {
             <div> 
                 <div className="overlay">
                     <div className="icons">
-                        <DiJavascript1 color="#fff" size={"5vw"} />
-                        <DiReact color="#fff" size={"5vw"} />
+                        <DiJavascript1 color="#fff" size={"4vw"} />
+                        <DiReact color="#fff" size={"4vw"} />
                     </div>
                 </div>
                 <div className="projectImg">
@@ -27,10 +27,10 @@ export default function Project({id}) {
                     Features I worked on include an infinite scrolling feed, messaging, and filtering resources from the database.</p>
                     <div className="external">
                         <a href="https://github.com/umcody/runaway">
-                            <FiGithub color="#fff" size={"4vw"} />
+                            <FiGithub color="#fff" size={"3vw"} />
                         </a>
                         <a href="https://www.runawayapp.com">
-                            <FiExternalLink color="#fff" size={"4vw"} />
+                            <FiExternalLink color="#fff" size={"3vw"} />
                         </a>
                     </div>
                 </div>
@@ -40,8 +40,8 @@ export default function Project({id}) {
             <div>
                 <div className="overlay">
                 <div className="icons">
-                        <DiPython color="#fff" size={"5vw"} />
-                        <FaSpotify color="#fff" size={"4.5vw"} />
+                        <DiPython color="#fff" size={"4vw"} />
+                        <FaSpotify color="#fff" size={"3.5vw"} />
                     </div>
                 </div>
                 <div className="projectImg">
@@ -53,10 +53,10 @@ export default function Project({id}) {
                     trends based on data from the Spotify web API.</p>
                     <div className="external">
                         <a href="https://github.com/em682/music-taste">
-                                <FiGithub color="#fff" size={"4vw"} />
+                                <FiGithub color="#fff" size={"3vw"} />
                         </a>
                         <a href="https://infogram.com/music-taste-1h8n6m1llv9m6xo?live">
-                                <FiExternalLink color="#fff" size={"4vw"} />
+                                <FiExternalLink color="#fff" size={"3vw"} />
                         </a>
                     </div>
                 </div>
@@ -65,9 +65,9 @@ export default function Project({id}) {
             <div>
                 <div className="overlay">
                 <div className="icons">
-                        <DiHtml5 color="#fff" size={"5vw"} />
-                        <DiCss3 color="#fff" size={"5vw"} />
-                        <DiPhp color="#fff" size={"5vw"} />
+                        <DiHtml5 color="#fff" size={"4vw"} />
+                        <DiCss3 color="#fff" size={"4vw"} />
+                        <DiPhp color="#fff" size={"4vw"} />
                     </div>
                 </div>
                 <div className="projectImg">
@@ -78,10 +78,10 @@ export default function Project({id}) {
                     <p className="desc">Created a basic website to practice backend development and database querying. List of exercises with tags and descriptions.</p>
                     <div className="external">
                         <a >
-                            <FiGithub color="transparent" size={"4vw"} />
+                            <FiGithub color="transparent" size={"3vw"} />
                         </a>
                         <a href="https://serene-forest-61580.herokuapp.com/index.php">
-                            <FiExternalLink color="#fff" size={"4vw"} />
+                            <FiExternalLink color="#fff" size={"3vw"} />
                         </a>
                     </div>
                 </div>

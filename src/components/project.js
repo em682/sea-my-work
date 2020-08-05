@@ -1,7 +1,7 @@
 import React from "react";
 import "../default.css";
 import logo from '../assets/RunawayLogoTransparent.png'
-import music from '../assets/music.png'
+import music from '../assets/m.png'
 import cali from '../assets/cal.png'
 import {DiReact,DiJavascript1,DiPython,DiHtml5,DiCss3,DiPhp} from 'react-icons/di'
 import {FaSpotify} from 'react-icons/fa'

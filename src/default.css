@@ -67,7 +67,7 @@ html,body{
     letter-spacing: 0.1em;
 }
 .nav button:hover {
-    font-size: 40px;
+    font-size: calc(24px + 1vw);
     color:#b28bc0;
 }
 .nav nav{

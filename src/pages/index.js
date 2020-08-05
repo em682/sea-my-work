@@ -7,7 +7,7 @@ import birds from '../assets/birds.png';
 import Wave from 'react-wavify';
 import "../default.css"
 import Project from "../components/project"
-import ProjectSlider from"../components/slider"
+import SimpleSlider from"../components/slider"
 import { AiFillLinkedin,AiFillGithub,AiFillInstagram,AiFillMail } from 'react-icons/ai';
 import { useMediaQuery } from 'react-responsive'
 
@@ -100,7 +100,7 @@ export default function Home() {
 
 
       {isMobile ? 
-        <ProjectSlider/> 
+        <SimpleSlider/> 
         :
         <div className="projects">
               <Project id ={0}/>

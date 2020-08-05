@@ -4,15 +4,15 @@ import Project from "./project";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default function ProjectSlider(){
-    var settings = {
+export default class SimpleSlider extends Component {
+  render() {
+    const settings = {
       dots: true,
       infinite: true,
-      speed: 1000,
+      speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1
     };
-
     return (
       <div className = "slider">
         <Slider {...settings}>
@@ -30,4 +30,5 @@ export default function ProjectSlider(){
       </div>
       
     );
+  }
 }

@@ -379,7 +379,7 @@ html,body{
     padding:20px;
     font-family: 'Cabin';
     line-height: 1.5em;
-    font-size: calc(8px + 1vw);
+    font-size: calc(12px + 1vw);
     color:#fff;
     background-color: transparent;
 }
@@ -455,7 +455,10 @@ html,body{
 }
 
 /*Projects*/
-
+.slider{
+    width:60vw;
+    margin:auto;
+}
 .projectContainer{
     justify-content:center;
     align-items:center;
@@ -473,7 +476,7 @@ html,body{
    min-height: calc(200px + 5vw);
 }
 .desc{
-    width:58vw;
+    width:56vw;
     font-size: calc(8px + 1vw);
     margin:auto;
     font-family: 'Cabin';

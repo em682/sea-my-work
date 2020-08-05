@@ -14,7 +14,7 @@ export default function ProjectSlider(){
     };
 
     return (
-      <div>
+      <div className = "slider">
         <Slider {...settings}>
             
           <Project id={0}/>

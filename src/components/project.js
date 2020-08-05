@@ -5,21 +5,19 @@ import music from '../assets/m.png'
 import cali from '../assets/cal.png'
 import {DiReact,DiJavascript1,DiPython,DiHtml5,DiCss3,DiPhp} from 'react-icons/di'
 import {FiExternalLink,FiGithub} from 'react-icons/fi'
-import { useMediaQuery } from 'react-responsive'
 
 export default function Project({id}) {
-    const isMobile = useMediaQuery({ query: '(max-width: 600px)' })
-    let iconSize = '4vw';
 
-    if(isMobile){iconSize='10vw'}
+'4vw'
+
     return(
         <div className="projectContainer">
             { id ===0 ?
             <div> 
                 <div className="overlay">
                     <div className="icons">
-                        <DiJavascript1 color="#fff" size={iconSize} />
-                        <DiReact color="#fff" size={iconSize} />
+                        <DiJavascript1 color="#fff" size={'3vw'} />
+                        <DiReact color="#fff" size={'3vw'} />
                     </div>
                 </div>
                 <div className="projectImg">
@@ -31,10 +29,10 @@ export default function Project({id}) {
                     Features I worked on include an infinite scrolling feed, messaging, and filtering resources from the database.</p>
                     <div className="external">
                         <a href="https://github.com/umcody/runaway">
-                            <FiGithub color="#fff" size={iconSize} />
+                            <FiGithub color="#fff" size={'4vw'} />
                         </a>
                         <a href="https://www.runawayapp.com">
-                            <FiExternalLink color="#fff" size={iconSize} />
+                            <FiExternalLink color="#fff" size={'4vw'} />
                         </a>
                     </div>
                 </div>
@@ -44,7 +42,7 @@ export default function Project({id}) {
             <div>
                 <div className="overlay">
                 <div className="icons">
-                        <DiPython color="#fff" size={iconSize} />
+                        <DiPython color="#fff" size={'3vw'} />
                     </div>
                 </div>
                 <div className="projectImg">
@@ -56,10 +54,10 @@ export default function Project({id}) {
                     trends based on data from the Spotify web API. Data was then visualized with Infogram.</p>
                     <div className="external">
                         <a href="https://github.com/em682/music-taste">
-                                <FiGithub color="#fff" size={iconSize} />
+                                <FiGithub color="#fff" size={'4vw'} />
                         </a>
                         <a href="https://infogram.com/music-taste-1h8n6m1llv9m6xo?live">
-                                <FiExternalLink color="#fff" size={iconSize} />
+                                <FiExternalLink color="#fff" size={'4vw'} />
                         </a>
                     </div>
                 </div>
@@ -68,9 +66,9 @@ export default function Project({id}) {
             <div>
                 <div className="overlay">
                 <div className="icons">
-                        <DiHtml5 color="#fff" size={iconSize} />
-                        <DiCss3 color="#fff" size={iconSize} />
-                        <DiPhp color="#fff" size={iconSize} />
+                        <DiHtml5 color="#fff" size={'3vw'} />
+                        <DiCss3 color="#fff" size={'3vw'} />
+                        <DiPhp color="#fff" size={'3vw'} />
                     </div>
                 </div>
                 <div className="projectImg">
@@ -82,7 +80,7 @@ export default function Project({id}) {
                     The site has a list of exercises with tags and descriptions, allowing users to upload their own pictures.</p>
                     <div className="external">
                         <a href="https://serene-forest-61580.herokuapp.com/index.php">
-                            <FiExternalLink color="#fff" size={iconSize} />
+                            <FiExternalLink color="#fff" size={'4vw'} />
                         </a>
                     </div>
                 </div>

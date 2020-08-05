@@ -14,14 +14,17 @@ export default function ProjectSlider(){
     };
 
     return (
-      <Slider {...settings}>
-       
+      <div>
+        <Slider {...settings}>
+            
           <Project id={0}/>
-       
+          
           <Project id={1}/>
-        
+          
           <Project id={2}/>
-        
-      </Slider>
+          
+        </Slider>
+      </div>
+      
     );
 }

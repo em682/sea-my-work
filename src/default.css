@@ -22,7 +22,13 @@ html,body{
     outline: 0;
     
 }
+html {
+    overflow: hidden;
+}
 
+body {
+    overflow: auto;
+}
 /* Header*/
 
 .header{
@@ -321,7 +327,7 @@ html,body{
         letter-spacing: 0.1em;
     }
     .nav button:hover {
-        font-size: calc(24px + 1vw);
+        font-size: calc(22px + 1vw);
         color:#b28bc0;
     }
     .sun{
@@ -382,7 +388,7 @@ html,body{
     padding:20px;
     font-family: 'Cabin';
     line-height: 1.5em;
-    font-size: calc(12px + 1vw);
+    font-size: calc(14px + 1vw);
     color:#fff;
     background-color: transparent;
 }
@@ -391,11 +397,11 @@ html,body{
     margin:auto;
     border-radius: 2vw;
     display: block;
-    width: 70vw;
+    width: 80vw;
     margin-bottom:20px;
 }
 .aboutCard{
-    width: 70vw;
+    width: 80vw;
     background-color: #003063;
     margin:auto;
     padding:0;
@@ -463,13 +469,13 @@ html,body{
 }
 .projects{display: none !important;}
 .slider{
-    width:70vw;
+    width:80vw;
     margin:auto;
 }
 .projectContainer{
     justify-content:center;
     align-items:center;
-    width: 70vw;
+    width: 80vw;
 }
 .projects{
     display: flex;
@@ -479,12 +485,12 @@ html,body{
     margin-right: 2.5vw;
 }
 .img{
-   width:70vw;
-   min-height: calc(210px + 5vw);
+   width:80vw;
+   min-height: calc(250px + 5vw);
 }
 .desc{
-    width:66vw;
-    font-size: calc(12px + 1vw);
+    width:76vw;
+    font-size: calc(14px + 1vw);
     margin:auto;
     font-family: 'Cabin';
     line-height: 1.5em;
@@ -495,8 +501,8 @@ html,body{
 }
 .overlay{
     position: absolute;
-    width:70vw;
-    min-height: calc(210px + 5vw);
+    width:80vw;
+    min-height: calc(250px + 5vw);
     background-color: transparent;
     border-radius: calc(12px + 1vw);
     opacity: 0;
@@ -508,8 +514,8 @@ html,body{
 }
 .projectImg{
     background-color: #fff;
-    width: 70vw;
-    min-height: calc(210px + 5vw);
+    width: 80vw;
+    min-height: calc(250px + 5vw);
     border-radius: calc(12px + 1vw);
     justify-content: center;
     align-items: center;
@@ -519,7 +525,7 @@ html,body{
 .descCard{
     background-color: #003063;
     margin-top: 20px;
-    width: 70vw;
+    width: 80vw;
     min-height: calc(200px + 5vw);
     border-radius: calc(12px + 1vw);
     justify-content: center;
@@ -530,7 +536,7 @@ html,body{
 }
 .title{
     line-height: 2em;
-    font-size: calc(12px + 1vw);
+    font-size: calc(14px + 1vw);
     color:#f4afc2;
     font-family: 'Bungee';
     text-align: center;

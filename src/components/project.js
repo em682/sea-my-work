@@ -11,7 +11,7 @@ export default function Project({id}) {
     const isMobile = useMediaQuery({ query: '(max-width: 600px)' })
     let iconSize = '4vw';
 
-    if(isMobile){iconSize='8vw'}
+    if(isMobile){iconSize='10vw'}
     return(
         <div className="projectContainer">
             { id ===0 ?

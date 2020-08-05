@@ -107,7 +107,7 @@ export default function Home() {
               <Project/>
         </div> 
       
-           <div style={{width:'40vw',margin:'auto'}} id="whale" />
+           <div style={{width:'50vw',margin:'auto'}} id="whale" />
 
         <h2  ref={contactRef} className="special">Let's Connect!</h2>
         <div className='icon-links'>

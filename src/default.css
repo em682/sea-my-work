@@ -1,0 +1,296 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+/*Colors*/
+
+/* Overall styling*/
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    border: 0;
+    outline: 0;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    
+}
+
+/* Header*/
+
+.header{
+    width:100%;
+    height:750px;
+    margin:0;
+    padding:0;
+    user-select: none
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:auto
+}
+.nav h1{
+    padding-left: 2.5vw;
+    font-family: 'Bungee Shade';
+    font-size: 3vw;
+    color:	#003063;
+    background-color: transparent;
+    flex-grow: 5;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    user-select: none
+    
+}
+.nav button {
+    font-family: 'Bungee';
+    text-decoration: none;
+    font-size: 2vw;
+    color:#003063;
+    margin-Top:10;
+    font-weight: bold;
+    margin-right: 1em;
+    background-color: transparent;
+    user-select: none;
+    letter-spacing: 0.1em;
+}
+.nav button:hover {
+    font-size: 2.1vw;
+    color:#b28bc0;
+}
+.nav nav{
+    margin-right: 0;
+   flex-grow: 1;
+    z-index: 10;
+}
+.sun{
+    position: absolute;
+    width:20vw;
+    height:20vw;
+    right:10vw;
+    top:20px;
+    z-index: 5;
+    background-color: #FD5E53;
+    border-radius: 10vw;
+}
+.birds{
+    position: absolute;
+    width:100%;
+    height:750px;
+    top:0;
+    z-index: 6;
+}
+.wave{
+    position: absolute;
+    bottom:0;
+}
+
+/* Body Content */
+
+.content{
+    margin:0;
+    padding:0;
+    border-top: #0097FF,2,solid;
+    overflow: hidden;
+    
+}
+.content h2{
+    padding-left: 2.5vw;
+    font-family: 'Bungee';
+    font-weight: bold;
+    line-height: 2em;
+    font-size: 2.5vw;
+    color:#fff;
+    background-color: transparent;
+    margin-bottom: 5vw;
+    letter-spacing: 0.1em;
+}
+.aboutCard p{
+    margin-bottom: 5vw;
+    margin:auto;
+    font-family: 'Cabin';
+    line-height: 1.5em;
+    font-size: 2vw;
+    color:#fff;
+    background-color: transparent;
+}
+.me{
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+    width:20vw;
+    margin-left:2.5vw;
+    margin-right:2.5vw;
+    border-radius: 10px;
+    flex:1;
+}
+.aboutCard{
+    flex:3;
+    background-color: #003063;
+    margin-right:2.5vw;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+.skills{
+    font-size: 1.5vw !important;
+}
+.content a{
+    font-family: 'Cabin';
+    line-height: 1.5em;
+    font-size: 2vw;
+    color:#fff;
+    background-color: transparent;
+    text-decoration: none;
+}
+.content a:hover{
+    text-align: center;
+    text-decoration: underline;
+}
+.special{
+    text-align: center;
+    font-family: 'Bungee';
+    letter-spacing: 0.185em;
+    line-height: 2em;
+    color:#f4afc2 !important
+}
+.center{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.25vw;
+    color:#fff;
+    margin:auto;
+    font-family: 'Cabin';
+    line-height: 1.5em;
+}
+.icon-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-right: 10vw;
+    width: 100%;
+}
+.credits{
+    text-align:center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+/* Projects*/
+.projectContainer{
+    justify-content:center;
+    align-items:'center';
+}
+.projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+.desc{
+    width: 25vw;
+    font-size: 24px;
+    margin-bottom: 5vw;
+    margin:auto;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-family: 'Cabin';
+    line-height: 1.5em;
+    color:#fff;
+    background-color: transparent;
+    height:16vw
+}
+.overlay{
+    position: absolute;
+    width:27vw;
+    height:27vw;
+    background-color: transparent;
+    border-radius: 20px;
+    opacity: 0;
+}
+.overlay:hover{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 1;
+}
+.projectImg{
+    background-color: #fff;
+    width: 27vw;
+    height: 27vw;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+.descCard{
+    background-color: #003063;
+    margin-top: 20px;
+    width: 27vw;
+    height: 27vw;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+.title{
+    line-height: 2em;
+    font-size: 2vw;
+    color:#f4afc2;
+    font-family: 'Bungee';
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.icons{
+    position: absolute;
+    bottom: 5px;
+    right:20px;
+}
+.external{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+/* Animations */
+
+.turt {
+    position: absolute;
+    animation: turtleSwim 20s infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes turtleSwim {
+    0% {
+        right: 0vw;
+        opacity: 0;
+    }
+    25% {
+        right: 40vw;
+        opacity: 1;
+       
+    }
+    50% {
+        right: 70vw;
+        opacity: 1;
+      
+    }
+    75% {
+        right: 100vw;
+        opacity: 0;
+      
+    }
+  }

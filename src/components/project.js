@@ -4,7 +4,6 @@ import logo from '../assets/RunawayLogoTransparent.png'
 import music from '../assets/m.png'
 import cali from '../assets/cal.png'
 import {DiReact,DiJavascript1,DiPython,DiHtml5,DiCss3,DiPhp} from 'react-icons/di'
-import {FaSpotify} from 'react-icons/fa'
 import {FiExternalLink,FiGithub} from 'react-icons/fi'
 
 export default function Project({id}) {
@@ -23,7 +22,7 @@ export default function Project({id}) {
                 </div>
                 <div className='descCard'>
                     <p className="title">Runaway App</p>
-                    <p className="desc">Worked as a front end developer in the development of Runaway’s mobile app. 
+                    <p className="desc">Worked as a front end developer for Runaway's mobile and web app. 
                     Features I worked on include an infinite scrolling feed, messaging, and filtering resources from the database.</p>
                     <div className="external">
                         <a href="https://github.com/umcody/runaway">
@@ -41,7 +40,6 @@ export default function Project({id}) {
                 <div className="overlay">
                 <div className="icons">
                         <DiPython color="#fff" size={"4vw"} />
-                        <FaSpotify color="#fff" size={"3.5vw"} />
                     </div>
                 </div>
                 <div className="projectImg">
@@ -77,9 +75,7 @@ export default function Project({id}) {
                     <p className="title">Calisthenics</p>
                     <p className="desc">Created a basic website to practice backend development and database querying. List of exercises with tags and descriptions.</p>
                     <div className="external">
-                        <a >
-                            <FiGithub color="transparent" size={"3vw"} />
-                        </a>
+                        
                         <a href="https://serene-forest-61580.herokuapp.com/index.php">
                             <FiExternalLink color="#fff" size={"3vw"} />
                         </a>

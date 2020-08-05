@@ -62,11 +62,11 @@ export default function Home() {
       </header>
       <div className="content" style={{backgroundImage: 'linear-gradient(#0266c8,#003062)' }}>
 
-        <h2 style={{paddingTop:'5vw'}}ref={aboutRef}>About Me</h2>
+        <h2 style={{paddingTop:'2vw'}}ref={aboutRef}>About Me</h2>
         <div style={{display:'flex',flexDirection:'row'}}>
           <img src={me} alt="That's me" className= "me"/>
           <div className= "aboutCard">
-            <p>I am a junior studying information science at Cornell University. I am interested in front end development 
+            <p>Hey! I'm Ethan, a junior studying information science at Cornell University. I am interested in front end development 
               with working experience in using React and React Native.
               I also have an interest in data science and would love to delve deeper into it. 
               My interests are mainly dancing, basketball, and rock climbing.
@@ -87,7 +87,7 @@ export default function Home() {
 
         <div className="turt" style={{width:'20vw',right:0,opacity:0}}id="turtle" />
         
-        <h2 ref={projRef} style={{marginTop:'200px',paddingTop:'5vw'}}>Projects</h2>
+        <h2 ref={projRef} style={{marginTop:'200px',paddingTop:'2vw'}}>Projects</h2>
         <div className="projects">
               <Project id ={0}/>
               <Project id ={1}/>

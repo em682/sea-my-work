@@ -100,9 +100,7 @@ export default function Home() {
 
 
       {isMobile ? 
-      <div style={{width:'60vw',justifyContent:'center',margin:'auto'}}>
         <ProjectSlider/> 
-      </div>
         :
         <div className="projects">
               <Project id ={0}/>

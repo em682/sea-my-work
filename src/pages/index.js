@@ -7,6 +7,7 @@ import birds from '../assets/birds.png';
 import Wave from 'react-wavify';
 import "../default.css"
 import Project from "../components/project"
+import ProjectSlider from"../components/slider"
 import { AiFillLinkedin,AiFillGithub,AiFillInstagram,AiFillMail } from 'react-icons/ai';
 
 const scrollToRef = (ref) => window.scrollTo({top:ref.current.offsetTop,behavior: 'smooth'}) 
@@ -91,7 +92,8 @@ export default function Home() {
               <Project id ={0}/>
               <Project id ={1}/>
               <Project/>
-        </div>
+        </div> 
+
            <div style={{width:'40vw',margin:'auto'}} id="whale" />
 
         <h2  ref={contactRef} className="special">Let's Connect!</h2>

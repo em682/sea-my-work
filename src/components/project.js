@@ -1,8 +1,8 @@
 import React from "react";
 import "../default.css";
 import logo from '../assets/RunawayLogoTransparent.png'
-import music from '../assets/music.PNG'
-import cali from '../assets/cali.PNG'
+import music from '../assets/music.png'
+import cali from '../assets/cal.png'
 import {DiReact,DiJavascript1,DiPython,DiHtml5,DiCss3,DiPhp} from 'react-icons/di'
 import {FaSpotify} from 'react-icons/fa'
 import {FiExternalLink,FiGithub} from 'react-icons/fi'
@@ -10,7 +10,7 @@ import {FiExternalLink,FiGithub} from 'react-icons/fi'
 export default function Project({id}) {
     return(
         <div className="projectContainer">
-            { id ==0 ?
+            { id ===0 ?
             <div> 
                 <div className="overlay">
                     <div className="icons">
@@ -36,7 +36,7 @@ export default function Project({id}) {
                 </div>
             </div>
             : 
-            id ==1 ?  
+            id ===1 ?  
             <div>
                 <div className="overlay">
                 <div className="icons">

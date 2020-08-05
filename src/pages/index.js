@@ -61,22 +61,22 @@ export default function Home() {
             />
       </header>
       <div className="content" style={{backgroundImage: 'linear-gradient(#0266c8,#003062)' }}>
-        <h2 style={{paddingTop:'50px'}}ref={aboutRef}>About Me</h2>
-        <div style={{display:'flex',flexDirection:'row'}}>
+        <h2 className ="aboutTitle" ref={aboutRef}>About Me</h2>
+        <div className='about'>
           <img src={me} alt="That's me" className= "me"/>
           <div className= "aboutCard">
             <p>Hey! I'm Ethan, a junior studying information science at Cornell University. I am interested in front end development 
               with working experience in using React and React Native.
-              I also have an interest in data science and would love to delve deeper into it. I am huge problem solver with a great work ethic.
+              I also have an interest in data science and would love to delve deeper into it.
               My interests are mainly dancing, basketball, and rock climbing.
             </p>
-            <div style={{ paddingTop: '150px'}}>
-            <p className="skills">
-              Languages: HTML/CSS, Javascript, Java, and Python
-            </p>
-            <p className="skills">
-              Technologies: ReactJS, GatsbyJS, React Native, pandas, and scikit-learn
-            </p>
+            <div className="skillsContainer">
+              <p className="skills">
+                Languages: HTML/CSS, Javascript, Java, and Python
+              </p>
+              <p className="skills">
+                Technologies: ReactJS, GatsbyJS, React Native, pandas, and scikit-learn
+              </p>
             </div>
             
           </div>

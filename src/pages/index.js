@@ -180,8 +180,8 @@ export default function Home() {
             <HamburgerMenu
               isOpen={open}
               menuClicked={handleClick}
-              width={40}
-              height={30}
+              width={35}
+              height={27.5}
               strokeWidth={3}
               rotate={0}
               color={light ? theme.secondary : theme.tertiary}

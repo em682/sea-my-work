@@ -18,7 +18,10 @@ import Runlogo from '../assets/RunawayLogoTransparent.png'
 import music from '../assets/m.png'
 import cali from '../assets/cal.png'
 import {DiReact,DiJavascript1,DiPython,DiHtml5,DiCss3,DiPhp} from 'react-icons/di'
-import {FiExternalLink,FiGithub} from 'react-icons/fi'
+import {FiExternalLink,FiGithub} from 'react-icons/fi';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 const scrollToRef = (ref) => window.scrollTo({top:ref.current.offsetTop,behavior: 'smooth'}) 
@@ -50,6 +53,16 @@ export default function Home() {
     });
   }, []);
   
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    
+  };
+
+
   const aboutRef = useRef(null)
   const projRef = useRef()
   const contactRef = useRef()
@@ -152,12 +165,14 @@ export default function Home() {
           <div className="nav">
             <h1>Ethan Ma</h1>
             <img src={light? logo : logo2} alt="Logo" className="logo"/>
-            <div style={{position:'absolute',top:5,left:'45%',zIndex:9}}>
-            <Switch
-                    isOn={light}
-                    handleToggle={() => setLight(!light)} 
-                />
-            </div>
+            <div style={{position:'absolute',top:5,left:'calc(40vw)',zIndex:9,display:'flex',flexDirection:'row'}}>
+              <p className="time" style={{color: light ? theme.secondary : theme.tertiary}}>NIGHT</p>
+              <Switch
+                      isOn={light}
+                      handleToggle={() => setLight(!light)} 
+                  />
+              <p className="time" style={{color: light ? theme.secondary : theme.tertiary}}>DAY</p>
+              </div>
             <nav>
               <button style={{color: light ? theme.secondary : theme.tertiary}} onClick={goToAbout}>About</button> 
               <button style={{color: light ? theme.secondary : theme.tertiary}} onClick={goToProjects}>Projects</button> 
@@ -223,7 +238,20 @@ export default function Home() {
         <h2 style={{color:theme.foreground}} ref={projRef} style={{marginTop:'200px',paddingTop:'2vw'}}>Projects</h2>
 
         <div className="projectsMobile">
-          <SimpleSlider/> 
+            <div className = "slider">
+            <Slider {...settings}>
+                <div>
+                <Project id={0}/>
+                </div>
+                <div>
+                <Project id={1}/>
+                </div>
+                <div>
+                <Project id={2}/>
+                </div>
+              
+            </Slider>
+            </div>
         </div>
         <div className="projects">
               <Project id ={0} />

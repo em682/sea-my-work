@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
 @import url('https://fonts.googleapis.com/css?family=Bungee');
 @import url('https://fonts.googleapis.com/css?family=Cabin');
-
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 /*Colors*/
 
 /* Overall styling*/
@@ -27,7 +27,7 @@ html,body{
 
 .header{
     width:100%;
-    height:750px;
+    height:90vh;
     margin:0;
     padding:0;
     user-select: none;
@@ -42,7 +42,7 @@ html,body{
 }
 .nav h1{
     padding-left: 2.5vw;
-    font-family: 'Bungee Shade';
+    font-family: 'Kaushan Script';
     font-size: calc(24px + 1vw);
     color:	#003063;
     background-color: transparent;
@@ -55,7 +55,7 @@ html,body{
     
 }
 .nav button {
-    font-family: 'Bungee';
+    font-family: 'Kaushan Script';
     text-decoration: none;
     font-size: calc(24px + 1vw);
     color:#003063;
@@ -64,10 +64,10 @@ html,body{
     margin-right: 1em;
     background-color: transparent;
     user-select: none;
-    letter-spacing: 0.1em;
+    
 }
 .nav button:hover {
-    font-size: calc(24px + 1vw);
+    font-size: calc(40px);
     color:#b28bc0;
 }
 .nav nav{
@@ -88,7 +88,7 @@ html,body{
 .birds{
     position: absolute;
     width:100%;
-    height:750px;
+    height:90vh;
     top:0;
     z-index: 6;
 }
@@ -107,7 +107,7 @@ html,body{
 }
 .content h2{
     padding-left: 2.5vw;
-    font-family: 'Bungee';
+    font-family: 'Kaushan Script';
     font-weight: bold;
     line-height: 2em;
     font-size: calc(24px + 1vw);
@@ -150,7 +150,7 @@ html,body{
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
 }
 .skillsContainer{
-    padding-top: 150px
+    padding-top: 5vw
 }
 .skills{
     font-size: calc(10x + 1vw) !important;
@@ -169,7 +169,7 @@ html,body{
 }
 .special{
     text-align: center;
-    font-family: 'Bungee';
+    font-family: 'Kaushan Script';
     letter-spacing: 0.185em;
     line-height: 2em;
     color:#f4afc2 !important
@@ -268,7 +268,7 @@ html,body{
     line-height: 2em;
     font-size: calc(24px + 1vw);
     color:#f4afc2;
-    font-family: 'Bungee';
+    font-family: 'Kaushan Script';
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -298,7 +298,7 @@ html,body{
     /*Header*/
     .header{
         width:100%;
-        height:500px;
+        height:90vh;
         margin:0;
         padding:0;
         user-select: none;
@@ -309,7 +309,7 @@ html,body{
         font-size: 20px;
     }
     .nav button {
-        font-family: 'Bungee';
+        font-family: 'Kaushan Script';
         text-decoration: none;
         font-size: calc(20px + 1vw);
         color:#003063;
@@ -321,7 +321,7 @@ html,body{
         letter-spacing: 0.1em;
     }
     .nav button:hover {
-        font-size: calc(22px + 1vw);
+        font-size: calc(20px + 1vw);
         color:#b28bc0;
     }
     .sun{
@@ -341,7 +341,7 @@ html,body{
     .birds{
         position: absolute;
         width:100%;
-        height:500px;
+        height:90vh;
         top:0;
         z-index: 6;
     }
@@ -361,7 +361,7 @@ html,body{
 .content h2{
     width: 90vw;
     margin:auto;
-    font-family: 'Bungee';
+    font-family: 'Kaushan Script';
     font-weight: bold;
     line-height: 2em;
     font-size: calc(24px + 1vw);
@@ -428,7 +428,7 @@ html,body{
 }
 .special{
     text-align: center;
-    font-family: 'Bungee';
+    font-family: 'Kaushan Script';
     letter-spacing: 0.185em;
     line-height: 2em;
     color:#f4afc2 !important
@@ -532,7 +532,7 @@ html,body{
     line-height: 2em;
     font-size: calc(14px + 1vw);
     color:#f4afc2;
-    font-family: 'Bungee';
+    font-family: 'Kaushan Script';
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;

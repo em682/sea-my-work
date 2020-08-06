@@ -9,8 +9,6 @@ import logo2 from '../assets/logo.png';
 import Wave from 'react-wavify';
 import "../style/default.css";
 import Switch from "../components/switch";
-import Project from "../components/project"
-import SimpleSlider from"../components/slider"
 import { AiFillLinkedin,AiFillGithub,AiFillInstagram,AiFillMail } from 'react-icons/ai';
 import HamburgerMenu from 'react-hamburger-menu';
 import {theme1,theme2} from "../style/theme.js";

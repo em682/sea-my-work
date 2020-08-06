@@ -64,8 +64,8 @@ export default function Home() {
               <HamburgerMenu
                 isOpen={open}
                 menuClicked={handleClick}
-                width={50}
-                height={40}
+                width={40}
+                height={30}
                 strokeWidth={3}
                 rotate={0}
                 color='#003063'

@@ -102,7 +102,16 @@ html,body{
 }
 .menu{
     display: none;
-    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    width:100%;
+    height:70%;
+    background-color:rgba(244, 175, 194,.9);
+    z-index: 11;
+    position: absolute;
+    top:0;
+    left:0;
+    border-bottom-left-radius: 20%;
 }
 .open{
     display: none;
@@ -113,11 +122,12 @@ html,body{
     position: absolute;
     top:0;
     left:0;
+    transition: transform 0.3s ease-in-out;
     transform: translateX(0%);
     border-bottom-left-radius: 20%;
     
 }
-.open button{
+.open button, .menu button{
     font-family: 'Kaushan Script';
     text-decoration: none;
     font-size: calc(30px + 1vw);

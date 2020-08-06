@@ -73,7 +73,7 @@ html,body{
 }
 .nav button:hover {
     font-size: calc(40px);
-    color:#b28bc0;
+    color:#b28bc0 !important;
 }
 .nav nav{
     margin-right: 0;

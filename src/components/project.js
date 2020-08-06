@@ -8,7 +8,6 @@ import {FiExternalLink,FiGithub} from 'react-icons/fi'
 
 export default function Project({id}) {
 
-'4vw'
 
     return(
         <div className="projectContainer">

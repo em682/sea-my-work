@@ -164,12 +164,12 @@ export default function Home() {
             <h1>Ethan Ma</h1>
             <img src={light? logo : logo2} alt="Logo" className="logo"/>
             <div style={{position:'absolute',top:5,left:'calc(40vw)',zIndex:9,display:'flex',flexDirection:'row'}}>
-              <p className="time" style={{color: light ? theme.secondary : theme.tertiary}}>NIGHT</p>
+              <p className="time" style={{color: light ? theme.secondary : theme.tertiary}}>Night</p>
               <Switch
                       isOn={light}
                       handleToggle={() => setLight(!light)} 
                   />
-              <p className="time" style={{color: light ? theme.secondary : theme.tertiary}}>DAY</p>
+              <p className="time" style={{color: light ? theme.secondary : theme.tertiary}}>Day</p>
               </div>
             <nav>
               <button style={{color: light ? theme.secondary : theme.tertiary}} onClick={goToAbout}>About</button> 

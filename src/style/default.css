@@ -46,17 +46,7 @@ html,body{
     right:10px;
 }
 .nav h1{
-    padding-left: 2.5vw;
-    font-family: 'Kaushan Script';
-    font-size: calc(26px + 1vw);
-    color:	#003063;
-    background-color: transparent;
-    flex-grow: 5;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    user-select: none
+    display: none;
     
 }
 .logo{
@@ -73,12 +63,12 @@ html,body{
     font-family: 'Kaushan Script';
     text-decoration: none;
     font-size: calc(24px + 1vw);
-    color:#003063;
     margin-Top:10;
     font-weight: bold;
     margin-right: 1em;
     background-color: transparent;
     user-select: none;
+    cursor:pointer
     
 }
 .nav button:hover {
@@ -97,43 +87,53 @@ html,body{
     right:100px;
     top:20px;
     z-index: 5;
-    background-color: #FD5E53;
     border-radius: 150px;
 }
 .menu{
     display: none;
-    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    width:100%;
+    height:70%;
+    z-index: 11;
+    position: absolute;
+    top:0;
+    left:0;
+    border-bottom-left-radius: 20%;
 }
 .open{
     display: none;
     width:100%;
     height:70%;
-    background-color:rgba(244, 175, 194,.9);
     z-index: 11;
     position: absolute;
     top:0;
     left:0;
+    transition: transform 0.3s ease-in-out;
     transform: translateX(0%);
     border-bottom-left-radius: 20%;
     
 }
-.open button{
+.open button, .menu button{
     font-family: 'Kaushan Script';
     text-decoration: none;
     font-size: calc(30px + 1vw);
-    color:#003063;
     margin-Top:10;
     font-weight: bold;
     margin-right: 1em;
     background-color: transparent;
     user-select: none;
     padding-bottom: 1em;
+    cursor:pointer;
 }
 .menu nav, .open nav{
     display: flex;
     flex-direction: column;
     padding-top:10px;
 
+}
+.time{
+    font-family: "Kaushan Script";
 }
 .birds{
     position: absolute;
@@ -151,7 +151,7 @@ html,body{
     display: none;
     position: absolute;
     top:20px;
-    left: 85%;
+    left: 82%;
     z-index: 12;
 }
 
@@ -169,10 +169,10 @@ html,body{
     font-weight: bold;
     line-height: 2em;
     font-size: calc(24px + 1vw);
-    color:#fff;
     background-color: transparent;
     margin-bottom: 2vw;
     letter-spacing: 0.1em;
+    color:#fff;
 }
 .aboutCard p{
     margin-bottom: 5vw;
@@ -230,7 +230,6 @@ html,body{
     font-family: 'Kaushan Script';
     letter-spacing: 0.185em;
     line-height: 2em;
-    color:#f4afc2 !important
 }
 .center{
     margin-top: 50px;
@@ -325,7 +324,6 @@ html,body{
 .title{
     line-height: 2em;
     font-size: calc(24px + 1vw);
-    color:#f4afc2;
     font-family: 'Kaushan Script';
     text-align: center;
     padding-top: 10px;
@@ -353,7 +351,7 @@ html,body{
 /*-----------------------------------------------------------------------------------------------------*/
 /* Media Queries*/
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1200px){
     .nav nav{
         display: none;
     }
@@ -379,33 +377,15 @@ html,body{
     .header{
         width:100%;
         height:90vh;
-        margin:0;
-        padding:0;
-        user-select: none;
-        overflow: hidden;
-        position: relative
-    }
-    .nav h1{
-        font-size: 20px;
     }
     .nav nav{
         display: none;
     }
     .nav button {
-        font-family: 'Kaushan Script';
-        text-decoration: none;
         font-size: calc(20px + 1vw);
-        color:#003063;
-        margin-Top:10;
-        font-weight: bold;
-        margin-right: 1em;
-        background-color: transparent;
-        user-select: none;
-        letter-spacing: 0.1em;
     }
     .nav button:hover {
         font-size: calc(20px + 1vw);
-        color:#b28bc0;
     }
     .sun{
         position: absolute;
@@ -414,23 +394,11 @@ html,body{
         right:50px;
         top:20px;
         z-index: 5;
-        background-color: #FD5E53;
         border-radius: 75px;
     }
     nav{
         display: flex;
         flex-direction: column;
-    }
-    .birds{
-        position: absolute;
-        width:100%;
-        height:90vh;
-        top:0;
-        z-index: 6;
-    }
-    .wave{
-        position: absolute;
-       
     }
     .open{
         display: block;
@@ -444,23 +412,12 @@ html,body{
 
     /* Body Content */
 
-.content{
-    margin:0;
-    padding-top:50px;
-    overflow: hidden;
-    
-}
 .content h2{
     width: 90vw;
     margin:auto;
-    font-family: 'Kaushan Script';
-    font-weight: bold;
     line-height: 2em;
     font-size: calc(24px + 1vw);
-    color:#fff;
-    background-color: transparent;
     margin-bottom: 2vw;
-    letter-spacing: 0.1em;
     text-align: center;
 }
 .about{
@@ -475,7 +432,6 @@ html,body{
     font-family: 'Cabin';
     line-height: 1.5em;
     font-size: calc(14px + 1vw);
-    color:#fff;
     background-color: transparent;
 }
 .me{
@@ -488,7 +444,6 @@ html,body{
 }
 .aboutCard{
     width: 80vw;
-    background-color: #003063;
     margin:auto;
     padding:0;
     border-radius: 2vw;
@@ -504,34 +459,16 @@ html,body{
     padding-right:20;
     padding-top: 0;
     padding-bottom:0;
-    
 }
 .content a{
-    font-family: 'Cabin';
     line-height: 1.5em;
     font-size: calc(12px + 1vw);
-    color:#fff;
-    background-color: transparent;
-    text-decoration: none;
 }
-.content a:hover{
-    text-align: center;
-    text-decoration: underline;
-}
-.special{
-    text-align: center;
-    font-family: 'Kaushan Script';
-    letter-spacing: 0.185em;
-    line-height: 2em;
-    color:#f4afc2 !important
-}
+
 .center{
-    margin-top: 50px;
     text-align: center;
     font-size: calc(12px + 1vw);
-    color:#fff;
     margin:auto;
-    font-family: 'Cabin';
     line-height: 1.5em;
 }
 .icon-links{
@@ -578,10 +515,7 @@ html,body{
     width:76vw;
     font-size: calc(14px + 1vw);
     margin:auto;
-    font-family: 'Cabin';
     line-height: 1.5em;
-    color:#fff;
-    background-color: transparent;
     position: relative;
     padding-bottom: 20px;
 }
@@ -591,15 +525,9 @@ html,body{
     min-height: calc(250px + 5vw);
     background-color: transparent;
     border-radius: calc(12px + 1vw);
-    opacity: 0;
 }
-.overlay:hover{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.75);
-    opacity: 1;
-}
+
 .projectImg{
-    background-color: #fff;
     width: 80vw;
     min-height: calc(250px + 5vw);
     border-radius: calc(12px + 1vw);
@@ -609,7 +537,6 @@ html,body{
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 .descCard{
-    background-color: #003063;
     margin-top: 20px;
     width: 80vw;
     min-height: calc(250px + 5vw);
@@ -623,16 +550,10 @@ html,body{
 .title{
     line-height: 2em;
     font-size: calc(14px + 1vw);
-    color:#f4afc2;
     font-family: 'Kaushan Script';
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-.icons{
-    position: absolute;
-    bottom: 5px;
-    right:20px;
 }
 .external{
     display: flex;
@@ -642,11 +563,6 @@ html,body{
     vertical-align: bottom
    
 }
-
-
-
-
-
 
 }
 

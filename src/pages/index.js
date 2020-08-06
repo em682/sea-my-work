@@ -4,23 +4,37 @@ import turtle from "../animations/turtle.json";
 import whale from "../animations/whale.json";
 import me from '../assets/me.jpg';
 import birds from '../assets/birds.png'; 
-import logo from '../assets/logo2.png' 
+import logo from '../assets/logo2.png';
+import logo2 from '../assets/logo.png';
 import Wave from 'react-wavify';
-import "../default.css"
-import Project from "../components/project"
-import SimpleSlider from"../components/slider"
+import "../style/default.css";
+import Switch from "../components/switch";
 import { AiFillLinkedin,AiFillGithub,AiFillInstagram,AiFillMail } from 'react-icons/ai';
+import HamburgerMenu from 'react-hamburger-menu';
+import {theme1,theme2} from "../style/theme.js";
+import Runlogo from '../assets/RunawayLogoTransparent.png'
+import music from '../assets/m.png'
+import cali from '../assets/cal.png'
+import {DiReact,DiJavascript1,DiPython,DiHtml5,DiCss3,DiPhp} from 'react-icons/di'
+import {FiExternalLink,FiGithub} from 'react-icons/fi';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-import HamburgerMenu from 'react-hamburger-menu'
+
 const scrollToRef = (ref) => window.scrollTo({top:ref.current.offsetTop,behavior: 'smooth'}) 
 
 export default function Home() {
 
+
   const [open, setOpen] = useState(false);
-  // media queries
-  
-  
-  
+  const [light,setLight] = useState(true);
+
+  var theme = theme1;
+  if (light){
+   theme=theme1
+  }
+  else theme=theme2
 
   useEffect(() => {
     lottie.loadAnimation({
@@ -37,6 +51,16 @@ export default function Home() {
     });
   }, []);
   
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    
+  };
+
+
   const aboutRef = useRef(null)
   const projRef = useRef()
   const contactRef = useRef()
@@ -49,40 +73,132 @@ export default function Home() {
     setOpen(!open)
   }
   
+
+   const Project = ({id})=> {
+    return(
+        <div className="projectContainer">
+            { id ===0 ?
+            <div> 
+                <div className="overlay">
+                    <div className="icons">
+                        <DiJavascript1 color="#fff" size={'calc(20px + 3vw)'} />
+                        <DiReact color="#fff" size={'calc(20px + 3vw)'} />
+                    </div>
+                </div>
+                <div className="projectImg">
+                    <img src={Runlogo} alt="Runaway" className="img"/>     
+                </div>
+                <div className='descCard' style={{backgroundColor:theme.secondary}}>
+                    <p className="title" style={{color:theme.tertiary}}>Runaway App</p>
+                    <p className="desc">Worked as a front end developer for Runaway's mobile and web app. 
+                    Features I worked on include an infinite scrolling feed, messaging, and filtering resources from the database.</p>
+                    <div className="external">
+                        <a href="https://github.com/umcody/runaway">
+                            <FiGithub color="#fff" size={'calc(20px + 3vw)'} />
+                        </a>
+                        <a href="https://www.runawayapp.com">
+                            <FiExternalLink color="#fff" size={'calc(20px + 3vw)'} />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            : 
+            id ===1 ?  
+            <div>
+                <div className="overlay">
+                <div className="icons">
+                        <DiPython color="#fff" size={'calc(20px + 3vw)'} />
+                    </div>
+                </div>
+                <div className="projectImg">
+                    <img src={music} alt="Music Taste" className="img"/>     
+                </div>
+                <div className='descCard' style={{backgroundColor:theme.secondary}}>
+                    <p className="title" style={{color:theme.tertiary}}>Music Taste</p>
+                    <p className="desc">Using pandas and Jupyter notebook, I performed data analysis on my listening 
+                    trends based on data from the Spotify Web API. Data was then visualized with Infogram.</p>
+                    <div className="external">
+                        <a href="https://github.com/em682/music-taste">
+                                <FiGithub color="#fff" size={'calc(20px + 3vw)'} />
+                        </a>
+                        <a href="https://infogram.com/music-taste-1h8n6m1llv9m6xo?live">
+                                <FiExternalLink color="#fff" size={'calc(20px + 3vw)'} />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            : 
+            <div>
+                <div className="overlay">
+                <div className="icons">
+                        <DiHtml5 color="#fff" size={'calc(20px + 3vw)'} />
+                        <DiCss3 color="#fff" size={'calc(20px + 3vw)'} />
+                        <DiPhp color="#fff" size={'calc(20px + 3vw)'} />
+                    </div>
+                </div>
+                <div className="projectImg">
+                    <img src={cali} alt="Calisthenics" className="img"/>     
+                </div>
+                <div className='descCard' style={{backgroundColor:theme.secondary}}>
+                    <p className="title" style={{color:theme.tertiary}}>Calisthenics</p>
+                    <p className="desc">Created a basic website to practice backend development and database querying. 
+                    The site has a list of exercises with tags and descriptions, allowing user upload.</p>
+                    <div className="external">
+                        <a href="https://serene-forest-61580.herokuapp.com/index.php">
+                            <FiExternalLink color="#fff" size={'calc(20px + 3vw)'} />
+                        </a>
+                    </div>
+                </div>
+            </div>
+                 } 
+        </div>
+    )
+}
+
+
   return (
-    <div style={{backgroundColor:"#0097FF"}}>
-      <header className="header" style={{backgroundImage: 'linear-gradient(#f4afc2,#b28bc0)'}}>
-        <div className="sun"/>
-            <div className="nav">
-                <img src={logo} alt="Logo" className="logo"/>
-                <nav>
-                    <button style={{cursor:'pointer'}} onClick={goToAbout}>About</button> 
-                    <button style={{cursor:'pointer'}} onClick={goToProjects}>Projects</button> 
-                    <button style={{cursor:'pointer'}} onClick={goToContact}>Contact</button> 
-                </nav>
-  </div>
-              <HamburgerMenu
-                isOpen={open}
-                menuClicked={handleClick}
-                width={50}
-                height={40}
-                strokeWidth={3}
-                rotate={0}
-                color='#003063'
-                className="burger"
+    <div style={{backgroundColor:theme.primary}}>
+      <header className="header" style={{backgroundImage:theme.header}}>
+        <div className="sun" style={{backgroundColor:theme.sun}}/>
+          <div className="nav">
+            <h1>Ethan Ma</h1>
+            <img src={light? logo : logo2} alt="Logo" className="logo"/>
+            <div style={{position:'absolute',top:5,left:'calc(40vw)',zIndex:9,display:'flex',flexDirection:'row'}}>
+              <p className="time" style={{color: light ? theme.secondary : theme.tertiary}}>NIGHT</p>
+              <Switch
+                      isOn={light}
+                      handleToggle={() => setLight(!light)} 
+                  />
+              <p className="time" style={{color: light ? theme.secondary : theme.tertiary}}>DAY</p>
+              </div>
+            <nav>
+              <button style={{color: light ? theme.secondary : theme.tertiary}} onClick={goToAbout}>About</button> 
+              <button style={{color: light ? theme.secondary : theme.tertiary}} onClick={goToProjects}>Projects</button> 
+              <button style={{color: light ? theme.secondary : theme.tertiary}} onClick={goToContact}>Contact</button> 
+            </nav>
+          </div>
+            <HamburgerMenu
+              isOpen={open}
+              menuClicked={handleClick}
+              width={40}
+              height={30}
+              strokeWidth={3}
+              rotate={0}
+              color={light ? theme.secondary : theme.tertiary}
+              className="burger"
             />
-            <div className={open? "open" : "menu"}> 
+            <div className={open? "open" : "menu"} style={{backgroundColor:theme.menuBack}}> 
               <nav>
-                    <button style={{cursor:'pointer'}} onClick={goToAbout}>About</button> 
-                    <button style={{cursor:'pointer'}} onClick={goToProjects}>Projects</button> 
-                    <button style={{cursor:'pointer'}} onClick={goToContact}>Contact</button> 
+              <button style={{color: light ? theme.secondary : theme.tertiary}} onClick={goToAbout}>About</button> 
+              <button style={{color: light ? theme.secondary : theme.tertiary}} onClick={goToProjects}>Projects</button> 
+              <button style={{color: light ? theme.secondary : theme.tertiary}} onClick={goToContact}>Contact</button> 
               </nav>
 
               </div>
-              <img src={birds} alt="Seagulls" className="birds"/>
+              {light ? <img src={birds} alt="Seagulls" className="birds"/> : null}
             <Wave 
                 className="wave"
-                fill='#0266c8'
+                fill={theme.primary}
                 paused={false}
                 options={{
                   height: 10,
@@ -92,12 +208,12 @@ export default function Home() {
                 }}
             />
       </header>
-      <div className="content" style={{backgroundImage: 'linear-gradient(#0266c8,#003062)' }}>
-        <h2 className ="aboutTitle" ref={aboutRef}>About Me</h2>
+      <div className="content" style={{backgroundImage: theme.water }}>
+        <h2 style={{color:theme.foreground}} className ="aboutTitle" ref={aboutRef}>About Me</h2>
         <div className='about'>
           <img src={me} alt="That's me" className= "me"/>
-          <div className= "aboutCard">
-            <p>Hey! I'm Ethan, a student at Cornell University studying Info Science. I enjoy designing and coding applications.
+          <div className= "aboutCard" style={{backgroundColor:theme.secondary}}>
+            <p >Hey! I'm Ethan, a student at Cornell University studying Info Science. I enjoy designing and coding applications.
                I'm also interested in data science and would love to delve deeper.
               My interests are mainly dancing, basketball, and rock climbing.
             </p>
@@ -117,20 +233,33 @@ export default function Home() {
 
         <div className="turt" style={{width:'250px',right:0,opacity:0}}id="turtle" />
         
-        <h2 ref={projRef} style={{marginTop:'200px',paddingTop:'2vw'}}>Projects</h2>
+        <h2 style={{color:theme.foreground}} ref={projRef} style={{marginTop:'200px',paddingTop:'2vw'}}>Projects</h2>
 
         <div className="projectsMobile">
-          <SimpleSlider/> 
+            <div className = "slider">
+            <Slider {...settings}>
+                <div>
+                <Project id={0}/>
+                </div>
+                <div>
+                <Project id={1}/>
+                </div>
+                <div>
+                <Project id={2}/>
+                </div>
+              
+            </Slider>
+            </div>
         </div>
         <div className="projects">
-              <Project id ={0}/>
+              <Project id ={0} />
               <Project id ={1}/>
-              <Project/>
+              <Project />
         </div> 
       
            <div style={{width:'50vw',margin:'auto'}} id="whale" />
 
-        <h2  ref={contactRef} className="special">Let's Connect!</h2>
+        <h2 style={{color:theme.tertiary}} ref={contactRef} className="special">Let's Connect!</h2>
         <div className='icon-links'>
               <a href="https://www.linkedin.com/in/ethan-ma-705147182/">
                 <AiFillLinkedin color="#fff" size={"10vw"}/>

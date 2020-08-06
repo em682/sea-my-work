@@ -29,10 +29,10 @@ export default function Project({id}) {
                     Features I worked on include an infinite scrolling feed, messaging, and filtering resources from the database.</p>
                     <div className="external">
                         <a href="https://github.com/umcody/runaway">
-                            <FiGithub color="#fff" size={'calc(25px + 3vw)'} />
+                            <FiGithub color="#fff" size={'calc(20px + 3vw)'} />
                         </a>
                         <a href="https://www.runawayapp.com">
-                            <FiExternalLink color="#fff" size={'calc(25px + 3vw)'} />
+                            <FiExternalLink color="#fff" size={'calc(20px + 3vw)'} />
                         </a>
                     </div>
                 </div>
@@ -54,10 +54,10 @@ export default function Project({id}) {
                     trends based on data from the Spotify Web API. Data was then visualized with Infogram.</p>
                     <div className="external">
                         <a href="https://github.com/em682/music-taste">
-                                <FiGithub color="#fff" size={'calc(30px + 3vw)'} />
+                                <FiGithub color="#fff" size={'calc(20px + 3vw)'} />
                         </a>
                         <a href="https://infogram.com/music-taste-1h8n6m1llv9m6xo?live">
-                                <FiExternalLink color="#fff" size={'calc(25px + 3vw)'} />
+                                <FiExternalLink color="#fff" size={'calc(20px + 3vw)'} />
                         </a>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ export default function Project({id}) {
                     The site has a list of exercises with tags and descriptions, allowing user upload.</p>
                     <div className="external">
                         <a href="https://serene-forest-61580.herokuapp.com/index.php">
-                            <FiExternalLink color="#fff" size={'calc(25px + 3vw)'} />
+                            <FiExternalLink color="#fff" size={'calc(20px + 3vw)'} />
                         </a>
                     </div>
                 </div>

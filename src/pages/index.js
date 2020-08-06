@@ -1,25 +1,25 @@
-import React, {useEffect,useRef} from "react";
+import React, {useEffect,useRef,useState} from "react";
 import lottie from "lottie-web/build/player/lottie_light";
 import turtle from "../animations/turtle.json";
 import whale from "../animations/whale.json";
 import me from '../assets/me.jpg';
-import birds from '../assets/birds.png';  
+import birds from '../assets/birds.png'; 
+import logo from '../assets/logo2.png' 
 import Wave from 'react-wavify';
 import "../default.css"
 import Project from "../components/project"
 import SimpleSlider from"../components/slider"
 import { AiFillLinkedin,AiFillGithub,AiFillInstagram,AiFillMail } from 'react-icons/ai';
-import { useMediaQuery } from 'react-responsive'
 
+import HamburgerMenu from 'react-hamburger-menu'
 const scrollToRef = (ref) => window.scrollTo({top:ref.current.offsetTop,behavior: 'smooth'}) 
 
 export default function Home() {
-  
+
+  const [open, setOpen] = useState(false);
   // media queries
   
-  const isMobile = useMediaQuery({ query: '(max-width: 600px)' })
   
-  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
   
 
   useEffect(() => {
@@ -45,19 +45,41 @@ export default function Home() {
   const goToProjects = () => scrollToRef(projRef);
   const goToContact = () => scrollToRef(contactRef);
 
+  function handleClick() {
+    setOpen(!open)
+  }
+  
   return (
     <div style={{backgroundColor:"#0097FF"}}>
       <header className="header" style={{backgroundImage: 'linear-gradient(#f4afc2,#b28bc0)'}}>
         <div className="sun"/>
-      <img src={birds} alt="Seagulls" className="birds"/>
             <div className="nav">
-                <h1>Ethan Ma</h1>
+                <img src={logo} alt="Logo" className="logo"/>
                 <nav>
                     <button style={{cursor:'pointer'}} onClick={goToAbout}>About</button> 
                     <button style={{cursor:'pointer'}} onClick={goToProjects}>Projects</button> 
                     <button style={{cursor:'pointer'}} onClick={goToContact}>Contact</button> 
                 </nav>
-            </div>
+  </div>
+              <HamburgerMenu
+                isOpen={open}
+                menuClicked={handleClick}
+                width={50}
+                height={40}
+                strokeWidth={3}
+                rotate={0}
+                color='#003063'
+                className="burger"
+            />
+            <div className={open? "open" : "menu"}> 
+              <nav>
+                    <button style={{cursor:'pointer'}} onClick={goToAbout}>About</button> 
+                    <button style={{cursor:'pointer'}} onClick={goToProjects}>Projects</button> 
+                    <button style={{cursor:'pointer'}} onClick={goToContact}>Contact</button> 
+              </nav>
+
+              </div>
+              <img src={birds} alt="Seagulls" className="birds"/>
             <Wave 
                 className="wave"
                 fill='#0266c8'
@@ -75,9 +97,8 @@ export default function Home() {
         <div className='about'>
           <img src={me} alt="That's me" className= "me"/>
           <div className= "aboutCard">
-            <p>Hey! I'm Ethan, a junior studying information science at Cornell University. I am interested in front end development 
-              with working experience in using React and React Native.
-              I also have an interest in data science and would love to delve deeper into it.
+            <p>Hey! I'm Ethan, a student at Cornell University studying Info Science. I enjoy designing and coding applications.
+               I'm also interested in data science and would love to delve deeper.
               My interests are mainly dancing, basketball, and rock climbing.
             </p>
             <div className="skillsContainer">

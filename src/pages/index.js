@@ -6,7 +6,7 @@ import me from '../assets/me.jpg';
 import birds from '../assets/birds.png'; 
 import logo from '../assets/logo2.png' 
 import Wave from 'react-wavify';
-import "../default.css"
+import "../style/default.css"
 import Project from "../components/project"
 import SimpleSlider from"../components/slider"
 import { AiFillLinkedin,AiFillGithub,AiFillInstagram,AiFillMail } from 'react-icons/ai';
@@ -17,10 +17,7 @@ const scrollToRef = (ref) => window.scrollTo({top:ref.current.offsetTop,behavior
 export default function Home() {
 
   const [open, setOpen] = useState(false);
-  // media queries
-  
-  
-  
+  const [light,setLight] = useState(true);
 
   useEffect(() => {
     lottie.loadAnimation({
@@ -54,6 +51,7 @@ export default function Home() {
       <header className="header" style={{backgroundImage: 'linear-gradient(#f4afc2,#b28bc0)'}}>
         <div className="sun"/>
             <div className="nav">
+              <h1>Ethan Ma</h1>
                 <img src={logo} alt="Logo" className="logo"/>
                 <nav>
                     <button style={{cursor:'pointer'}} onClick={goToAbout}>About</button> 

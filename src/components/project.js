@@ -1,5 +1,5 @@
 import React from "react";
-import "../default.css";
+import "../style/default.css";
 import logo from '../assets/RunawayLogoTransparent.png'
 import music from '../assets/m.png'
 import cali from '../assets/cal.png'

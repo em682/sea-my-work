@@ -3,7 +3,8 @@ import lottie from "lottie-web/build/player/lottie_light";
 import turtle from "../animations/turtle.json";
 import whale from "../animations/whale.json";
 import me from '../assets/me.jpg';
-import birds from '../assets/birds.png';  
+import birds from '../assets/birds.png'; 
+import logo from '../assets/logo.png' 
 import Wave from 'react-wavify';
 import "../default.css"
 import Project from "../components/project"
@@ -51,7 +52,7 @@ export default function Home() {
         <div className="sun"/>
       <img src={birds} alt="Seagulls" className="birds"/>
             <div className="nav">
-                <h1>Ethan Ma</h1>
+                <img src={logo} alt="Logo" className="logo"/>
                 <nav>
                     <button style={{cursor:'pointer'}} onClick={goToAbout}>About</button> 
                     <button style={{cursor:'pointer'}} onClick={goToProjects}>Projects</button> 
@@ -75,9 +76,8 @@ export default function Home() {
         <div className='about'>
           <img src={me} alt="That's me" className= "me"/>
           <div className= "aboutCard">
-            <p>Hey! I'm Ethan, a junior studying information science at Cornell University. I am interested in front end development 
-              with working experience in using React and React Native.
-              I also have an interest in data science and would love to delve deeper into it.
+            <p>Hey! I'm Ethan, a student at Cornell University studying Info Science. I enjoy designing and coding applications.
+               I'm also interested in data science and would love to delve deeper.
               My interests are mainly dancing, basketball, and rock climbing.
             </p>
             <div className="skillsContainer">

@@ -163,7 +163,7 @@ export default function Home() {
           <div className="nav">
             <h1>Ethan Ma</h1>
             <img src={light? logo : logo2} alt="Logo" className="logo"/>
-            <div style={{position:'absolute',top:5,left:'calc(44vw)',zIndex:9,display:'flex',flexDirection:'row'}}>
+            <div style={{position:'absolute',top:5,left:'calc(45vw)',zIndex:9,display:'flex',flexDirection:'row'}}>
               
               <Switch
                       isOn={light}

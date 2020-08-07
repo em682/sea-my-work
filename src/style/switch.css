@@ -11,7 +11,7 @@
     cursor: pointer;
     width: calc(40px + 4vw);
     height: calc(19px + 2vw);
-    background: grey;
+    background: #121212;
     border-radius: 100px;
     position: relative;
     transition: background-color .2s;

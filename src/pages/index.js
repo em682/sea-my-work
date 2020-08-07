@@ -219,11 +219,25 @@ export default function Home() {
             </p>
             <div className="skillsContainer">
               <p className="skills">
-                Languages: HTML/CSS, Javascript, Java, and Python
+                Languages:
               </p>
+              <ul>
+                <li style={{borderColor:theme.tertiary}}>HTML5</li>
+                <li style={{borderColor:theme.tertiary}}>CSS3</li>
+                <li style={{borderColor:theme.tertiary}}>Javascript</li>
+                <li style={{borderColor:theme.tertiary}}>Java</li>
+                <li style={{borderColor:theme.tertiary}}>Python</li>
+              </ul>
               <p className="skills">
-                Technologies: ReactJS, GatsbyJS, React Native, pandas, and scikit-learn
+                Technologies:
               </p>
+              <ul>
+                <li style={{borderColor:theme.tertiary}}>React</li>
+                <li style={{borderColor:theme.tertiary}}>Gatsby</li>
+                <li style={{borderColor:theme.tertiary}}>React Native</li>
+                <li style={{borderColor:theme.tertiary}}>pandas</li>
+                <li style={{borderColor:theme.tertiary}}>scikit-learn</li>
+              </ul>
             </div>
             
           </div>

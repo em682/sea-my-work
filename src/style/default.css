@@ -169,7 +169,7 @@ h1{
     display: none;
     position: absolute;
     top:20px;
-    right: 85vw;
+    left: 85vw;
     z-index: 12;
 }
 

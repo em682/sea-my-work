@@ -16,7 +16,7 @@ import Runlogo from '../assets/RunawayLogoTransparent.png'
 import music from '../assets/m.png'
 import cali from '../assets/cal.png'
 import {DiReact,DiJavascript1,DiPython,DiHtml5,DiCss3,DiPhp} from 'react-icons/di'
-import {FiExternalLink,FiGithub,FiChevronsDown} from 'react-icons/fi';
+import {FiExternalLink,FiGithub,FiChevronDown} from 'react-icons/fi';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -165,7 +165,7 @@ export default function Home() {
           <button className="sea" onClick={goToAbout}>
             
             <td style={{textAlign: 'center',width:'100%',display:'block'}}>
-            <FiChevronsDown size={50} style={{color: theme.foreground}}/>
+            <FiChevronDown size={50} style={{color: theme.foreground}}/>
             </td>
           </button>
         </div>

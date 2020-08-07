@@ -16,7 +16,7 @@ import Runlogo from '../assets/RunawayLogoTransparent.png'
 import music from '../assets/m.png'
 import cali from '../assets/cal.png'
 import {DiReact,DiJavascript1,DiPython,DiHtml5,DiCss3,DiPhp} from 'react-icons/di'
-import {FiExternalLink,FiGithub} from 'react-icons/fi';
+import {FiExternalLink,FiGithub,FiChevronsDown} from 'react-icons/fi';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -160,10 +160,20 @@ export default function Home() {
     <div style={{backgroundColor:theme.primary}}>
       <header className="header" style={{backgroundImage:theme.header}}>
         <div className="sun" style={{backgroundColor:theme.sun}}/>
+        <div style={{position:'absolute',top:'300px',left:0,width:'100%',zIndex:10}}>
+          <h1 style={{color: light ? theme.secondary : theme.tertiary}}>Hey! I'm Ethan.</h1>
+          <button className="sea" onClick={goToAbout}>
+            
+            <td style={{textAlign: 'center',width:'100%',display:'block'}}>
+            <FiChevronsDown size={50} style={{color: theme.foreground}}/>
+            </td>
+          </button>
+        </div>
+        
+          
           <div className="nav">
-            <h1>Ethan Ma</h1>
             <img src={light? logo : logo2} alt="Logo" className="logo"/>
-            <div style={{position:'absolute',top:5,left:'calc(45vw)',zIndex:9,display:'flex',flexDirection:'row'}}>
+            <div style={{position:'absolute',top:'100px',right:'4vw',zIndex:9,display:'flex',flexDirection:'row'}}>
               
               <Switch
                       isOn={light}
@@ -212,12 +222,14 @@ export default function Home() {
         <h2 style={{color:theme.foreground}} className ="aboutTitle" ref={aboutRef}>About Me</h2>
         <div className='about'>
           <img src={me} alt="That's me" className= "me"/>
-          <div className= "aboutCard" style={{backgroundColor:theme.secondary}}>
-            <p >Hey! I'm Ethan, a student at Cornell University studying Info Science. I enjoy designing and coding applications.
-               I'm also interested in data science and would love to delve deeper.
-              My interests are mainly dancing, basketball, and rock climbing.
-            </p>
-            <div className="skillsContainer">
+          <div className="bio">
+            <div className= "aboutCard" style={{backgroundColor:theme.secondary}}>
+              <p >I'm a student at Cornell University studying Info Science. I enjoy designing and coding applications.
+                I'm also interested in data science and would love to delve deeper.
+                My interests are mainly dancing, basketball, and rock climbing.
+              </p>
+            </div>
+            <div className="skillsContainer" style={{backgroundColor:theme.secondary}}>
               <p className="skills">
                 Languages:
               </p>
@@ -239,7 +251,9 @@ export default function Home() {
                 <li style={{borderColor:theme.tertiary}}>scikit-learn</li>
               </ul>
             </div>
+          </div>
             
+            <div>
           </div>
         </div>
         <p>

@@ -45,9 +45,25 @@ html,body{
     top:20px;
     right:10px;
 }
-.nav h1{
-    display: none;
+h1{
+    font-size: calc(30px + 1vw);
+    font-family: 'Cabin';
+    margin: auto;
+    text-align: center;
+}
+.header p {
+    font-size: calc(12px + 1vw);
+    font-family: 'Cabin';
+    margin: auto;
+    text-align: center;
     
+}
+.sea{
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0 auto; 
+    display: block;
+    margin-top: calc(50px + 12vh)
 }
 .logo{
     position: absolute;
@@ -60,7 +76,7 @@ html,body{
     
 }
 .nav button{
-    font-family: 'Kaushan Script';
+    font-family: 'Cabin';
     text-decoration: none;
     font-size: calc(24px + 1vw);
     margin-Top:10;
@@ -68,12 +84,13 @@ html,body{
     margin-right: 1em;
     background-color: transparent;
     user-select: none;
-    cursor:pointer
+    cursor:pointer;
+    font-weight: 600;
     
 }
 .nav button:hover {
     font-size: calc(40px);
-    color:#b28bc0 !important;
+    color:#fff !important;
 }
 .nav nav{
     margin-right: 0;
@@ -82,12 +99,12 @@ html,body{
 }
 .sun{
     position: absolute;
-    width:300px;
-    height:300px;
+    width:250px;
+    height:250px;
     right:100px;
-    top:20px;
+    top:50px;
     z-index: 5;
-    border-radius: 150px;
+    border-radius: 125px;
 }
 .menu{
     display: none;
@@ -115,7 +132,7 @@ html,body{
     
 }
 .open button, .menu button{
-    font-family: 'Kaushan Script';
+    font-family: 'Cabin';
     text-decoration: none;
     font-size: calc(30px + 1vw);
     margin-Top:10;
@@ -152,7 +169,7 @@ html,body{
     display: none;
     position: absolute;
     top:20px;
-    left: 82%;
+    right: 85vw;
     z-index: 12;
 }
 
@@ -166,16 +183,24 @@ html,body{
 }
 .content h2{
     padding-left: 2.5vw;
-    font-family: 'Kaushan Script';
+    font-family: 'Cabin';
     font-weight: bold;
     line-height: 2em;
     font-size: calc(24px + 1vw);
     background-color: transparent;
     margin-bottom: 2vw;
-    letter-spacing: 0.1em;
+    
     color:#fff;
 }
-.aboutCard p{
+.bio {
+    display:flex;
+    flex-direction:column;
+    flex:3;
+    margin-right:2.5vw;
+    
+    justify-content: space-between;
+}
+.bio p{
     margin-bottom: 5vw;
     margin:auto;
     font-family: 'Cabin';
@@ -201,25 +226,30 @@ html,body{
     padding-top: 50px;
 }
 .aboutCard{
-    flex:3;
+    flex:1;
     background-color: #003063;
-    margin-right:2.5vw;
     padding:20px;
     border-radius: 10px;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
 }
 .skillsContainer{
-    padding-top: 5vw
+    flex:1;
+    background-color: #003063;
+    margin-top: 20px;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
 }
 .skills{
     font-size: calc(10x + 1vw) !important;
 }
-ul{
+.about ul{
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    flex-wrap: wrap;
 }
-li{
+.about li{
     margin-left: 20px;
     padding:5px;
     font-family: 'Cabin';
@@ -247,8 +277,6 @@ li{
 }
 .special{
     text-align: center;
-    font-family: 'Kaushan Script';
-    letter-spacing: 0.185em;
     line-height: 2em;
 }
 .center{
@@ -387,6 +415,12 @@ li{
     .title{
         font-size: calc(12px + 1vw);
     }
+    .sun{
+        
+        width:150px;
+        height:150px;
+        right:50px;
+    }
 }
 
 
@@ -408,13 +442,10 @@ li{
         font-size: calc(20px + 1vw);
     }
     .sun{
-        position: absolute;
+        
         width:150px;
         height:150px;
         right:50px;
-        top:20px;
-        z-index: 5;
-        border-radius: 75px;
     }
     nav{
         display: flex;
@@ -466,6 +497,11 @@ li{
     display: block;
     width: 80vw;
     margin-bottom:20px;
+}
+.bio{
+    width: 80vw;
+    margin:auto;
+    padding:0; 
 }
 .aboutCard{
     width: 80vw;

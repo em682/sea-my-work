@@ -1,5 +1,8 @@
 import React from 'react';
 import '../style/switch.css';
+// switch toggle component
+// credit James King
+//https://upmostly.com/tutorials/build-a-react-switch-toggle-component
 
 const Switch = ({ isOn, handleToggle }) => {
   return (

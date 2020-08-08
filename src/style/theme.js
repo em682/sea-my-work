@@ -10,11 +10,11 @@ export const theme1 ={
     foreground:'#fff',
     highlight:'#b28bc0',
     sun:'#FD5E53',
-    header:'linear-gradient(#f4afc2,#b28bc0)',
+    header:'linear-gradient(#f4afc2,#f4afc2)',
     water:'linear-gradient(#0266c8,#003062)'
     
 }
-
+// primary dark gray, secondary dark purple, teritiary neonish blue, moon white yellow
 export const theme2 ={
     primary:'#121212',
     secondary:'#1E1E1E',

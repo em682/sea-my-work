@@ -282,7 +282,7 @@ h1{
 .center{
     margin-top: 50px;
     text-align: center;
-    font-size: calc(12px + 1vw);
+    font-size: calc(8px + 1vw);
     color:#fff;
     margin:auto;
     font-family: 'Cabin';

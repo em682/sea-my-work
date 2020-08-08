@@ -18,6 +18,7 @@ import cali from '../assets/cal.png'
 import {DiReact,DiJavascript1,DiPython,DiHtml5,DiCss3,DiPhp} from 'react-icons/di'
 import {FiExternalLink,FiGithub,FiChevronDown} from 'react-icons/fi';
 import Slider from "react-slick";
+import SEO from "../components/seo"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -83,6 +84,7 @@ export default function Home() {
    const Project = ({id})=> {
     return(
         <div className="projectContainer">
+          <SEO/>
           { id ===0 ?
             <div> 
               <div className="overlay">

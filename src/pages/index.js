@@ -84,7 +84,7 @@ export default function Home() {
    const Project = ({id})=> {
     return(
         <div className="projectContainer">
-          <SEO/>
+          <SEO title="Ethan Ma"/>
           { id ===0 ?
             <div> 
               <div className="overlay">

@@ -123,7 +123,7 @@ export default function Home() {
               </div>
               <div className='descCard' style={{backgroundColor:theme.secondary}}>
                 <p className="title" style={{color:theme.tertiary}}>Music Taste</p>
-                <p className="desc">Using pandas and Jupyter notebook, I performed data analysis on my listening 
+                <p className="desc">Using pandas and coded in Jupyter notebook, I performed data analysis on my listening 
                   trends based on data from the Spotify Web API. Data was then visualized with Infogram.
                 </p>
                 <div className="external">
@@ -225,7 +225,7 @@ export default function Home() {
           <img src={me} alt="That's me" className= "me"/>
           <div className="bio">
             <div className= "aboutCard" style={{backgroundColor:theme.secondary}}>
-              <p >I'm a student at Cornell University studying Infoformation Science. I enjoy designing and coding applications.
+              <p >I'm a student at Cornell University studying Information Science. I enjoy designing and coding applications.
                 I'm also interested in data science and would love to delve deeper.
                 My interests are mainly dancing, basketball, and rock climbing.
               </p>

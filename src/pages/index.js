@@ -179,8 +179,8 @@ export default function Home() {
                 The page shows the time and a collection of links I frequently use.
                 </p>
                 <div className="external">
-                <a href="https://github.com/em682/minimal-startpage">
-                    <FiGithub color="#fff" size={'calc(20px + 3vw)'} />
+                  <a href="https://github.com/em682/minimal-startpage">
+                      <FiGithub color="#fff" size={'calc(20px + 3vw)'} />
                   </a>
                   <a href="https://em682.github.io/minimal-startpage/">
                     <FiExternalLink color="#fff" size={'calc(20px + 3vw)'} />

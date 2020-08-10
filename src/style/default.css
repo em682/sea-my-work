@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
 @import url('https://fonts.googleapis.com/css?family=Bungee');
 @import url('https://fonts.googleapis.com/css?family=Cabin');
-
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 /*Colors*/
 
 /* Overall styling*/
@@ -27,7 +27,7 @@ html,body{
 
 .header{
     width:100%;
-    height:750px;
+    height:90vh;
     margin:0;
     padding:0;
     user-select: none;
@@ -37,38 +37,60 @@ html,body{
 .nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin:auto
 }
-.nav h1{
-    padding-left: 2.5vw;
-    font-family: 'Bungee Shade';
-    font-size: calc(24px + 1vw);
-    color:	#003063;
-    background-color: transparent;
-    flex-grow: 5;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    user-select: none
+.nav nav{
+    position: absolute;
+    top:20px;
+    right:10px;
+}
+h1{
+    font-size: calc(30px + 1vw);
+    font-family: 'Cabin';
+    margin: auto;
+    text-align: center;
+}
+.header p {
+    font-size: calc(12px + 1vw);
+    font-family: 'Cabin';
+    margin: auto;
+    text-align: center;
     
 }
-.nav button {
-    font-family: 'Bungee';
+.sea{
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0 auto; 
+    display: block;
+    margin-top: calc(50px + 12vh)
+}
+.logo{
+    position: absolute;
+    left: 2.5vw;
+    background-color: transparent;
+    top:10px;
+    user-select: none;
+    max-width:100px;
+    height:50px;
+    
+}
+.nav button{
+    font-family: 'Cabin';
     text-decoration: none;
     font-size: calc(24px + 1vw);
-    color:#003063;
     margin-Top:10;
     font-weight: bold;
     margin-right: 1em;
     background-color: transparent;
     user-select: none;
-    letter-spacing: 0.1em;
+    cursor:pointer;
+    font-weight: 600;
+    
 }
 .nav button:hover {
-    font-size: 40px;
-    color:#b28bc0;
+    font-size: calc(40px);
+    color:#fff !important;
 }
 .nav nav{
     margin-right: 0;
@@ -77,24 +99,78 @@ html,body{
 }
 .sun{
     position: absolute;
-    width:300px;
-    height:300px;
+    width:250px;
+    height:250px;
     right:100px;
-    top:20px;
+    top:50px;
     z-index: 5;
-    background-color: #FD5E53;
-    border-radius: 150px;
+    border-radius: 125px;
+}
+.menu{
+    display: none;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    width:100%;
+    height:70%;
+    z-index: 11;
+    position: absolute;
+    top:0;
+    left:0;
+    border-bottom-left-radius: 20%;
+}
+.open{
+    display: none;
+    width:100%;
+    height:70%;
+    z-index: 11;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0%);
+    border-bottom-left-radius: 20%;
+    
+}
+.open button, .menu button{
+    font-family: 'Cabin';
+    text-decoration: none;
+    font-size: calc(30px + 1vw);
+    margin-Top:10;
+    font-weight: bold;
+    margin-right: 1em;
+    background-color: transparent;
+    user-select: none;
+    padding-bottom: 1em;
+    cursor:pointer;
+}
+.menu nav, .open nav{
+    display: flex;
+    flex-direction: column;
+    padding-top:10px;
+
+}
+.time{
+    font-family: "Kaushan Script";
+    font-size: 1.8vw;
 }
 .birds{
     position: absolute;
     width:100%;
-    height:750px;
+    height:90vh;
     top:0;
     z-index: 6;
 }
 .wave{
     position: absolute;
     bottom:-10px;
+    
+}
+.burger{
+    display: none;
+    position: absolute;
+    top:20px;
+    left: 85vw;
+    z-index: 12;
 }
 
 /* Body Content */
@@ -107,21 +183,29 @@ html,body{
 }
 .content h2{
     padding-left: 2.5vw;
-    font-family: 'Bungee';
+    font-family: 'Cabin';
     font-weight: bold;
     line-height: 2em;
     font-size: calc(24px + 1vw);
-    color:#fff;
     background-color: transparent;
     margin-bottom: 2vw;
-    letter-spacing: 0.1em;
+    
+    color:#fff;
 }
-.aboutCard p{
+.bio {
+    display:flex;
+    flex-direction:column;
+    flex:3;
+    margin-right:2.5vw;
+    
+    justify-content: space-between;
+}
+.bio p{
     margin-bottom: 5vw;
     margin:auto;
     font-family: 'Cabin';
     line-height: 1.5em;
-    font-size: calc(12px + 1vw);;
+    font-size: calc(12px + 1vw);
     color:#fff;
     background-color: transparent;
 }
@@ -135,25 +219,49 @@ html,body{
     width:1vw;
     margin-left:2.5vw;
     margin-right:2.5vw;
-    border-radius: 1vw;
+    border-radius: 10px;
     flex:1;
 }
 .aboutTitle{
     padding-top: 50px;
 }
 .aboutCard{
-    flex:3;
+    flex:1;
     background-color: #003063;
-    margin-right:2.5vw;
     padding:20px;
-    border-radius: 1vw;
+    border-radius: 10px;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
 }
 .skillsContainer{
-    padding-top: 150px
+    flex:1;
+    background-color: #003063;
+    margin-top: 20px;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
 }
 .skills{
     font-size: calc(10x + 1vw) !important;
+}
+.about ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+.about li{
+    margin-left: 20px;
+    padding:5px;
+    font-family: 'Cabin';
+    line-height: 1.5em;
+    font-size: calc(10px + 1vw);
+    color:#fff;
+    background-color: transparent;
+    list-style-position:inside;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .content a{
     font-family: 'Cabin';
@@ -169,15 +277,12 @@ html,body{
 }
 .special{
     text-align: center;
-    font-family: 'Bungee';
-    letter-spacing: 0.185em;
     line-height: 2em;
-    color:#f4afc2 !important
 }
 .center{
     margin-top: 50px;
     text-align: center;
-    font-size: calc(12px + 1vw);
+    font-size: calc(8px + 1vw);
     color:#fff;
     margin:auto;
     font-family: 'Cabin';
@@ -198,6 +303,9 @@ html,body{
     margin-bottom: 5vw;
 }
 /* Projects*/
+.projectsMobile{
+    display: none;
+}
 .projectContainer{
     justify-content:center;
     align-items:center;
@@ -208,6 +316,8 @@ html,body{
     justify-content: space-between;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+    flex-wrap: wrap;
+    
 }
 .img{
    width:27vw;
@@ -231,7 +341,7 @@ html,body{
     width:27vw;
     height:20vw;
     background-color: transparent;
-    border-radius: calc(12px + 1vw);
+    border-radius: 10px;
     opacity: 0;
 }
 .overlay:hover{
@@ -240,10 +350,11 @@ html,body{
     opacity: 1;
 }
 .projectImg{
+    margin-top: 50px;
     background-color: #fff;
     width: 27vw;
     height: 20vw;
-    border-radius: calc(12px + 1vw);
+    border-radius: 10px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -253,8 +364,8 @@ html,body{
     background-color: #003063;
     margin-top: 20px;
     width: 27vw;
-    min-height: calc(290px + 5vw);
-    border-radius: calc(12px + 1vw);
+    min-height: calc(300px + 5vw);
+    border-radius: 10px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -264,15 +375,14 @@ html,body{
 .title{
     line-height: 2em;
     font-size: calc(24px + 1vw);
-    color:#f4afc2;
-    font-family: 'Bungee';
+    font-family: 'Kaushan Script';
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 .icons{
     position: absolute;
-    bottom: 5px;
+    bottom: 10px;
     right:20px;
 }
 .external{
@@ -284,88 +394,89 @@ html,body{
    
 }
 
-
+.slick-dots li.slick-active button:before {
+    color: #fff !important;
+  }
 
 
 /*-----------------------------------------------------------------------------------------------------*/
 /* Media Queries*/
+
+@media screen and (max-width:1200px){
+    .nav nav{
+        display: none;
+    }
+    .open{
+        display: block;
+    }
+    .menu{
+        display: block;
+    }
+    .burger{
+        display: block;
+    }
+    .title{
+        font-size: calc(12px + 1vw);
+    }
+    .sun{
+        
+        width:150px;
+        height:150px;
+        right:50px;
+    }
+}
+
+
 
 @media screen and (max-width: 600px) {
 
     /*Header*/
     .header{
         width:100%;
-        height:500px;
-        margin:0;
-        padding:0;
-        user-select: none;
-        overflow: hidden;
-        position: relative
+        height:90vh;
     }
-    .nav h1{
-        font-size: 20px;
+    .nav nav{
+        display: none;
     }
     .nav button {
-        font-family: 'Bungee';
-        text-decoration: none;
-        font-size: calc(12px + 1vw);
-        color:#003063;
-        margin-Top:10;
-        font-weight: bold;
-        margin-right: 1em;
-        background-color: transparent;
-        user-select: none;
-        letter-spacing: 0.1em;
+        font-size: calc(20px + 1vw);
     }
     .nav button:hover {
-        font-size: calc(16px + 1vw);
-        color:#b28bc0;
+        font-size: calc(20px + 1vw);
     }
     .sun{
-        position: absolute;
+        
         width:150px;
         height:150px;
-        right:100px;
-        top:20px;
-        z-index: 5;
-        background-color: #FD5E53;
-        border-radius: 75px;
+        right:50px;
     }
     nav{
         display: flex;
         flex-direction: column;
     }
-    .birds{
-        position: absolute;
-        width:100%;
-        height:500px;
-        top:0;
-        z-index: 6;
+    .open{
+        display: block;
     }
-    .wave{
-        position: absolute;
-       
+    .menu{
+        display: block;
+    }
+    .burger{
+        display: block;
+    }
+    .logo{
+        max-width:70px;
+        height:35px;
+        
     }
 
     /* Body Content */
 
-.content{
-    margin:0;
-    padding-top:50px;
-    overflow: hidden;
-    
-}
 .content h2{
     width: 90vw;
     margin:auto;
-    font-family: 'Bungee';
-    font-weight: bold;
     line-height: 2em;
     font-size: calc(24px + 1vw);
-    color:#fff;
-    background-color: transparent;
     margin-bottom: 2vw;
-    letter-spacing: 0.1em;
     text-align: center;
 }
 .about{
@@ -379,24 +490,27 @@ html,body{
     padding:20px;
     font-family: 'Cabin';
     line-height: 1.5em;
-    font-size: calc(8px + 1vw);
-    color:#fff;
+    font-size: calc(14px + 1vw);
     background-color: transparent;
 }
 .me{
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
     margin:auto;
-    border-radius: 2vw;
+   
     display: block;
-    width: 70vw;
+    width: 80vw;
     margin-bottom:20px;
 }
+.bio{
+    width: 80vw;
+    margin:auto;
+    padding:0; 
+}
 .aboutCard{
-    width: 70vw;
-    background-color: #003063;
+    width: 80vw;
     margin:auto;
     padding:0;
-    border-radius: 2vw;
+   
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
 }
 .skillsContainer{
@@ -404,39 +518,21 @@ html,body{
     padding-bottom:10px;
 }
 .skillsContainer p{
-    font-size: calc(8px + 1vw);
+    font-size: calc(12px + 1vw);
     padding-left:20;
     padding-right:20;
     padding-top: 0;
     padding-bottom:0;
-    
 }
 .content a{
-    font-family: 'Cabin';
     line-height: 1.5em;
     font-size: calc(12px + 1vw);
-    color:#fff;
-    background-color: transparent;
-    text-decoration: none;
 }
-.content a:hover{
-    text-align: center;
-    text-decoration: underline;
-}
-.special{
-    text-align: center;
-    font-family: 'Bungee';
-    letter-spacing: 0.185em;
-    line-height: 2em;
-    color:#f4afc2 !important
-}
+
 .center{
-    margin-top: 50px;
     text-align: center;
     font-size: calc(12px + 1vw);
-    color:#fff;
     margin:auto;
-    font-family: 'Cabin';
     line-height: 1.5em;
 }
 .icon-links{
@@ -450,16 +546,23 @@ html,body{
 }
 .credits{
     text-align:center;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
 }
 
 /*Projects*/
-
+.projectsMobile{
+    display: block;
+}
+.projects{display: none !important;}
+.slider{
+    width:80vw;
+    margin:auto;
+}
 .projectContainer{
     justify-content:center;
     align-items:center;
-    width: 60vw;
+    width: 80vw;
 }
 .projects{
     display: flex;
@@ -469,49 +572,40 @@ html,body{
     margin-right: 2.5vw;
 }
 .img{
-   width:60vw;
-   min-height: calc(200px + 5vw);
+   width:80vw;
+   min-height: calc(250px + 5vw);
 }
 .desc{
-    width: 58vw;
-    font-size: calc(8px + 1vw);
+    width:76vw;
+    font-size: calc(14px + 1vw);
     margin:auto;
-    font-family: 'Cabin';
     line-height: 1.5em;
-    color:#fff;
-    background-color: transparent;
     position: relative;
     padding-bottom: 20px;
 }
 .overlay{
     position: absolute;
-    width:60vw;
-    min-height: calc(200px + 5vw);
+    width:80vw;
+    min-height: calc(250px + 5vw);
     background-color: transparent;
-    border-radius: calc(12px + 1vw);
-    opacity: 0;
+    
 }
-.overlay:hover{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.75);
-    opacity: 1;
-}
+
 .projectImg{
-    background-color: #fff;
-    width: 60vw;
-    min-height: calc(200px + 5vw);
-    border-radius: calc(12px + 1vw);
+    margin-top: 0px;
+    width: 80vw;
+    min-height: calc(250px + 5vw);
+    
     justify-content: center;
     align-items: center;
     overflow: hidden;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 .descCard{
-    background-color: #003063;
     margin-top: 20px;
-    width: 60vw;
-    min-height: calc(200px + 5vw);
-    border-radius: calc(12px + 1vw);
+    width: 80vw;
+    min-height: calc(250px + 5vw);
+    
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -520,17 +614,11 @@ html,body{
 }
 .title{
     line-height: 2em;
-    font-size: calc(12px + 1vw);
-    color:#f4afc2;
-    font-family: 'Bungee';
+    font-size: calc(14px + 1vw);
+    font-family: 'Kaushan Script';
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-.icons{
-    position: absolute;
-    bottom: 5px;
-    right:20px;
 }
 .external{
     display: flex;
@@ -540,11 +628,6 @@ html,body{
     vertical-align: bottom
    
 }
-
-
-
-
-
 
 }
 

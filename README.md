@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="src/images/icon.png" width="60" />
+  <a href="https://ethanma.netlify.app/">
+    <img alt="Gatsby" src="src/images/icon.png" width="100" />
   </a>
 </p>
 <h1 align="center">
@@ -9,7 +9,8 @@
 
 Welcome to my ocean-themed personal website. Wanted to practice my web dev skills so I made a portfolio of some sorts. I had fun using animations and a light/dark mode toggle.
 
-## 🚀 Created with Gatsby
+## 🚀 Created with
+<img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
 
 ## 💫 Deployed with
 

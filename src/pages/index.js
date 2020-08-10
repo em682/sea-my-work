@@ -15,6 +15,7 @@ import {theme1,theme2} from "../style/theme.js";
 import Runlogo from '../assets/RunawayLogoTransparent.png'
 import music from '../assets/m.png'
 import cali from '../assets/cal.png'
+import start from '../assets/start.png'
 import {DiReact,DiJavascript1,DiPython,DiHtml5,DiCss3,DiPhp} from 'react-icons/di'
 import {FiExternalLink,FiGithub,FiChevronDown} from 'react-icons/fi';
 import Slider from "react-slick";
@@ -136,7 +137,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            : 
+            : id ===2 ? 
             <div>
               <div className="overlay">
                 <div className="icons">
@@ -155,6 +156,33 @@ export default function Home() {
                 </p>
                 <div className="external">
                   <a href="https://serene-forest-61580.herokuapp.com/index.php">
+                    <FiExternalLink color="#fff" size={'calc(20px + 3vw)'} />
+                  </a>
+                </div>
+              </div>
+            </div>
+            :
+            <div>
+              <div className="overlay">
+                <div className="icons">
+                  <DiHtml5 color="#fff" size={'calc(20px + 3vw)'} />
+                  <DiCss3 color="#fff" size={'calc(20px + 3vw)'} />
+                  <DiJavascript1 color="#fff" size={'calc(20px + 3vw)'} />
+                </div>
+              </div>
+              <div className="projectImg">
+                <img src={start} alt="Start Page" className="img"/>     
+              </div>
+              <div className='descCard' style={{backgroundColor:theme.secondary}}>
+                <p className="title" style={{color:theme.tertiary}}>Minimal Start Page</p>
+                <p className="desc">Created a minimalistic start page. 
+                The page shows the time and a collection of links I frequently use.
+                </p>
+                <div className="external">
+                <a href="https://github.com/em682/minimal-startpage">
+                    <FiGithub color="#fff" size={'calc(20px + 3vw)'} />
+                  </a>
+                  <a href="https://em682.github.io/minimal-startpage/">
                     <FiExternalLink color="#fff" size={'calc(20px + 3vw)'} />
                   </a>
                 </div>
@@ -269,13 +297,17 @@ export default function Home() {
               <div>
                 <Project id={2}/>
               </div> 
+              <div>
+              <Project  />
+              </div>
             </Slider>
           </div>
         </div>
         <div className="projects">
           <Project id ={0} />
           <Project id ={1}/>
-          <Project />
+          <Project id={2} />
+          <Project  />
         </div> 
         <div style={{width:'50vw',margin:'auto'}} id="whale" />
         <h2 style={{color:theme.tertiary}} ref={contactRef} className="special">Let's Connect!</h2>

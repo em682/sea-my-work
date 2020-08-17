@@ -228,10 +228,10 @@ function goToContact() {scrollToRef(contactRef);setOpen(false)}
             className="burger"
           />
         <div className={open? "open" : "menu"} style={{backgroundColor:theme.menuBack}}> 
-          <nav>
-            <button style={{color: light ? theme.secondary : theme.tertiary}} onClick={goToAbout}>About</button> 
-            <button style={{color: light ? theme.secondary : theme.tertiary}} onClick={goToProjects}>Projects</button> 
-            <button style={{color: light ? theme.secondary : theme.tertiary}} onClick={goToContact}>Contact</button> 
+          <nav style={{marginTop:'80px'}}>
+            <button style={{marginTop:'10px',color: light ? theme.secondary : theme.tertiary}} onClick={goToAbout}>About</button> 
+            <button style={{marginTop:'10px',color: light ? theme.secondary : theme.tertiary}} onClick={goToProjects}>Projects</button> 
+            <button style={{marginTop:'10px',color: light ? theme.secondary : theme.tertiary}} onClick={goToContact}>Contact</button> 
           </nav>
         </div>
         </div>

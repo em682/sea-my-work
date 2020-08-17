@@ -606,8 +606,7 @@ h1{
 .descCard{
     margin-top: 20px;
     width: 80vw;
-    min-height: calc(250px + 5vw);
-    
+    min-height: calc(200px + 5vw);
     justify-content: center;
     align-items: center;
     overflow: hidden;

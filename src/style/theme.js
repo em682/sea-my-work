@@ -4,14 +4,15 @@
 export const theme1 ={
     primary:'#0266c8',
     secondary:'#003063',
-    tertiary:'#f4afc2',
+    tertiary:'#fff',
     menuBack:'rgba(244, 175, 194,.9)',
     background:'#fff',
     foreground:'#fff',
     highlight:'#b28bc0',
+    wave:'#00a8ff',
     sun:'#FD5E53',
-    header:'linear-gradient(#f4afc2,#f4afc2)',
-    water:'linear-gradient(#0266c8,#003062)'
+    header:'linear-gradient(#f4afc2 0 ,#f195ac 40% ,#b28bc0 70%)',
+    water:'linear-gradient(#00a8ff 0 ,#0266c8 10% ,#003062 80%)'
     
 }
 // primary dark gray, secondary dark purple, teritiary neonish blue, moon white yellow
@@ -25,6 +26,7 @@ export const theme2 ={
     highlight:'#b28bc0',
     sun:'#FEFCD7',
     header:'linear-gradient(#1F1C38,#1F1C38)',
-    water:'linear-gradient(#121212,#121212)'
+    water:'linear-gradient(#121212,#121212)',
+    wave:'#121212'
     
 }

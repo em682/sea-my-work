@@ -205,7 +205,7 @@ h1{
     margin:auto;
     font-family: 'Cabin';
     line-height: 1.5em;
-    font-size: calc(12px + 1vw);
+    font-size: calc(10px + 1vw);
     color:#fff;
     background-color: transparent;
 }
@@ -221,6 +221,7 @@ h1{
     margin-right:2.5vw;
     border-radius: 10px;
     flex:1;
+    object-fit: cover;
 }
 .aboutTitle{
     padding-top: 50px;
@@ -317,6 +318,7 @@ h1{
     margin-left: 2.5vw;
     margin-right: 2.5vw;
     flex-wrap: wrap;
+    margin-top:-40px;
     
 }
 .img{
@@ -333,7 +335,7 @@ h1{
     color:#fff;
     background-color: transparent;
     position: relative;
-    
+    min-height: calc(50px + 5vw);
     padding-bottom: 20px;
 }
 .overlay{
@@ -364,7 +366,7 @@ h1{
     background-color: #003063;
     margin-top: 20px;
     width: 27vw;
-    min-height: calc(300px + 5vw);
+    min-height: calc(230px + 5vw);
     border-radius: 10px;
     justify-content: center;
     align-items: center;
@@ -374,7 +376,7 @@ h1{
 }
 .title{
     line-height: 2em;
-    font-size: calc(24px + 1vw);
+    font-size: calc(22px + 1vw);
     font-family: 'Kaushan Script';
     text-align: center;
     padding-top: 10px;

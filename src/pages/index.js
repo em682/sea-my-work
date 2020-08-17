@@ -99,15 +99,15 @@ export default function Home() {
               </div>
               <div className='descCard' style={{backgroundColor:theme.secondary}}>
                 <p className="title" style={{color:theme.tertiary}}>Runaway App</p>
-                <p className="desc">Worked as a front end developer for Runaway's mobile and web app. 
-                  Features I worked on include an infinite scrolling feed, messaging, and filtering resources from the database.
+                <p className="desc">Helped develop Runaway's mobile app. 
+                  Features include an infinite scrolling feed, messaging, and resource search/filter.
                 </p>
                 <div className="external">
                   <a href="https://github.com/umcody/runaway">
-                    <FiGithub color="#fff" size={'calc(20px + 3vw)'} />
+                    <FiGithub color="#fff" size={'calc(10px + 3vw)'} />
                   </a>
                   <a href="https://www.runawayapp.com">
-                    <FiExternalLink color="#fff" size={'calc(20px + 3vw)'} />
+                    <FiExternalLink color="#fff" size={'calc(10px + 3vw)'} />
                   </a>
                 </div>
               </div>
@@ -124,15 +124,14 @@ export default function Home() {
               </div>
               <div className='descCard' style={{backgroundColor:theme.secondary}}>
                 <p className="title" style={{color:theme.tertiary}}>Music Taste</p>
-                <p className="desc">Using pandas and coded in Jupyter notebook, I performed data analysis on my listening 
-                  trends based on data from the Spotify Web API. Data was then visualized with Infogram.
+                <p className="desc">Data analysis on my listening trends based on data from the Spotify Web API. Visualized with an infographic.
                 </p>
                 <div className="external">
                   <a href="https://github.com/em682/music-taste">
-                    <FiGithub color="#fff" size={'calc(20px + 3vw)'} />
+                    <FiGithub color="#fff" size={'calc(10px + 3vw)'} />
                   </a>
                   <a href="https://infogram.com/music-taste-1h8n6m1llv9m6xo?live">
-                    <FiExternalLink color="#fff" size={'calc(20px + 3vw)'} />
+                    <FiExternalLink color="#fff" size={'calc(10px + 3vw)'} />
                   </a>
                 </div>
               </div>
@@ -151,12 +150,11 @@ export default function Home() {
               </div>
               <div className='descCard' style={{backgroundColor:theme.secondary}}>
                 <p className="title" style={{color:theme.tertiary}}>Calisthenics</p>
-                <p className="desc">Created a basic website to practice backend development and database querying. 
-                  The site has a list of exercises with tags and descriptions, allowing user upload.
+                <p className="desc">Website allowing users to upload and delete exercises with tags and filtering. 
                 </p>
                 <div className="external">
                   <a href="https://serene-forest-61580.herokuapp.com/index.php">
-                    <FiExternalLink color="#fff" size={'calc(20px + 3vw)'} />
+                    <FiExternalLink color="#fff" size={'calc(10px + 3vw)'} />
                   </a>
                 </div>
               </div>
@@ -175,15 +173,14 @@ export default function Home() {
               </div>
               <div className='descCard' style={{backgroundColor:theme.secondary}}>
                 <p className="title" style={{color:theme.tertiary}}>Minimal Start Page</p>
-                <p className="desc">Created a minimalistic start page. 
-                The page shows the time and a collection of links I frequently use.
+                <p className="desc">A custom start page with a clock and a collection of links I frequently use.
                 </p>
                 <div className="external">
                   <a href="https://github.com/em682/minimal-startpage">
-                      <FiGithub color="#fff" size={'calc(20px + 3vw)'} />
+                      <FiGithub color="#fff" size={'calc(10px + 3vw)'} />
                   </a>
                   <a href="https://em682.github.io/minimal-startpage/">
-                    <FiExternalLink color="#fff" size={'calc(20px + 3vw)'} />
+                    <FiExternalLink color="#fff" size={'calc(10px + 3vw)'} />
                   </a>
                 </div>
               </div>
@@ -236,7 +233,7 @@ export default function Home() {
         {light ? <img src={birds} alt="Seagulls" className="birds"/> : null}
         <Wave 
           className="wave"
-          fill={theme.primary}
+          fill={theme.wave}
           paused={false}
           options={{
             height: 10,

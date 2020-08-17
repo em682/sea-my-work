@@ -11,7 +11,7 @@ export const theme1 ={
     highlight:'#b28bc0',
     wave:'#00a8ff',
     sun:'#FD5E53',
-    header:'linear-gradient(#f4afc2 0 ,#f195ac 40% ,#b28bc0 70%)',
+    header:'linear-gradient(#f4afc2 0 ,#f195ac 40% ,#b28bc0 90%)',
     water:'linear-gradient(#00a8ff 0 ,#0266c8 10% ,#003062 80%)'
     
 }

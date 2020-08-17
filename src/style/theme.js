@@ -4,14 +4,14 @@
 export const theme1 ={
     primary:'#0266c8',
     secondary:'#003063',
-    tertiary:'#fff',
+    tertiary:'#f4afc2',
     menuBack:'rgba(244, 175, 194,.9)',
     background:'#fff',
     foreground:'#fff',
     highlight:'#b28bc0',
     wave:'#00a8ff',
     sun:'#FD5E53',
-    header:'linear-gradient(#f4afc2 0 ,#f195ac 40% ,#b28bc0 90%)',
+    header:'linear-gradient(#f4afc2 0 ,#f195ac 40% ,#b28bc0 95%)',
     water:'linear-gradient(#00a8ff 0 ,#0266c8 10% ,#003062 80%)'
     
 }

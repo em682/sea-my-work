@@ -265,22 +265,22 @@ function goToContact() {scrollToRef(contactRef);setOpen(false)}
                 Languages:
               </p>
               <ul>
-                <li style={{borderColor:theme.tertiary}}>HTML5</li>
-                <li style={{borderColor:theme.tertiary}}>CSS3</li>
-                <li style={{borderColor:theme.tertiary}}>Javascript</li>
-                <li style={{borderColor:theme.tertiary}}>Java</li>
-                <li style={{borderColor:theme.tertiary}}>Python</li>
-                <li style={{borderColor:theme.tertiary}}>PHP</li>
+                <li style={{backgroundColor:theme.tertiary}}>HTML5</li>
+                <li style={{backgroundColor:theme.tertiary}}>CSS3</li>
+                <li style={{backgroundColor:theme.tertiary}}>Javascript</li>
+                <li style={{backgroundColor:theme.tertiary}}>Java</li>
+                <li style={{backgroundColor:theme.tertiary}}>Python</li>
+                <li style={{backgroundColor:theme.tertiary}}>PHP</li>
               </ul>
               <p className="skills">
                 Technologies:
               </p>
               <ul>
-                <li style={{borderColor:theme.tertiary}}>React</li>
-                <li style={{borderColor:theme.tertiary}}>Gatsby</li>
-                <li style={{borderColor:theme.tertiary}}>React Native</li>
-                <li style={{borderColor:theme.tertiary}}>pandas</li>
-                <li style={{borderColor:theme.tertiary}}>scikit-learn</li>
+                <li style={{backgroundColor:theme.tertiary}}>React</li>
+                <li style={{backgroundColor:theme.tertiary}}>Gatsby</li>
+                <li style={{backgroundColor:theme.tertiary}}>React Native</li>
+                <li style={{backgroundColor:theme.tertiary}}>pandas</li>
+                <li style={{backgroundColor:theme.tertiary}}>scikit-learn</li>
               </ul>
             </div>
           </div>

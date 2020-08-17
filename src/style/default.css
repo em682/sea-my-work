@@ -257,10 +257,7 @@ h1{
     line-height: 1.5em;
     font-size: calc(10px + 1vw);
     color:#003063;
-    background-color: #f4afc2;
     list-style-position:inside;
-    
-    
     margin-top: 5px;
     margin-bottom: 5px;
 }

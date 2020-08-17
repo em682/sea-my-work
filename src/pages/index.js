@@ -1,4 +1,5 @@
 import React, {useEffect,useRef,useState} from "react";
+import { useOnClickOutside } from '../hook';
 import lottie from "lottie-web/build/player/lottie_light";
 import turtle from "../animations/turtle.json";
 import whale from "../animations/whale.json";
@@ -23,14 +24,13 @@ import SEO from "../components/seo"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// function to scroll to ref
-const scrollToRef = (ref) => window.scrollTo({top:ref.current.offsetTop,behavior: 'smooth'}) 
-
 // whole page
 export default function Home() {
 
 // open menu (mobile + tablet only)
   const [open, setOpen] = useState(false);
+  const node = useRef();
+  useOnClickOutside(node, () => setOpen(false));
 // when menu is clicked change open state
   function handleClick() {
     setOpen(!open)
@@ -43,6 +43,9 @@ export default function Home() {
    theme=theme1
   }
   else theme=theme2
+
+  // function to scroll to ref
+const scrollToRef = (ref) => window.scrollTo({top:ref.current.offsetTop,behavior: 'smooth'}) 
 
 // load lottie animations at start
 // animations will loop infinitely
@@ -76,9 +79,9 @@ export default function Home() {
   const projRef = useRef()
   const contactRef = useRef()
 
-  const goToAbout = () => scrollToRef(aboutRef)
-  const goToProjects = () => scrollToRef(projRef);
-  const goToContact = () => scrollToRef(contactRef);
+function goToAbout(){scrollToRef(aboutRef);setOpen(false)}
+function goToProjects() {scrollToRef(projRef);setOpen(false)}
+function goToContact() {scrollToRef(contactRef);setOpen(false)}
   
 // projects component
 // in this file so I could easily change themes
@@ -213,6 +216,7 @@ export default function Home() {
             <button style={{color: light ? theme.secondary : theme.tertiary}} onClick={goToContact}>Contact</button> 
           </nav>
         </div>
+        <div ref={node}>
           <HamburgerMenu
             isOpen={open}
             menuClicked={handleClick}
@@ -229,6 +233,7 @@ export default function Home() {
             <button style={{color: light ? theme.secondary : theme.tertiary}} onClick={goToProjects}>Projects</button> 
             <button style={{color: light ? theme.secondary : theme.tertiary}} onClick={goToContact}>Contact</button> 
           </nav>
+        </div>
         </div>
         {light ? <img src={birds} alt="Seagulls" className="birds"/> : null}
         <Wave 

@@ -14,6 +14,7 @@ import { AiFillLinkedin,AiFillGithub,AiFillInstagram,AiFillMail } from 'react-ic
 import HamburgerMenu from 'react-hamburger-menu';
 import {theme1,theme2} from "../style/theme.js";
 import Runlogo from '../assets/RunawayLogoTransparent.png'
+import mocks from '../assets/mockups.jpg'
 import music from '../assets/m.png'
 import cali from '../assets/cal.png'
 import start from '../assets/start.png'
@@ -98,7 +99,7 @@ function goToContact() {scrollToRef(contactRef);setOpen(false)}
                 </div>
               </div>
               <div className="projectImg">
-                <img src={Runlogo} alt="Runaway" className="img"/>     
+                <img src={mocks} alt="Runaway" className="img"/>     
               </div>
               <div className='descCard' style={{backgroundColor:theme.secondary}}>
                 <p className="title" style={{color:theme.tertiary}}>Runaway App</p>

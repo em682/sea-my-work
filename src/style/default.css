@@ -89,7 +89,6 @@ h1{
     
 }
 .nav button:hover {
-    font-size: calc(40px);
     color:#fff !important;
 }
 .nav nav{

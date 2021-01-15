@@ -202,7 +202,7 @@ function goToContact() {scrollToRef(contactRef);setOpen(false)}
           <h1 style={{color: light ? theme.secondary : theme.tertiary}}>Hey! I'm Ethan.</h1>
           <button className="sea" onClick={goToAbout}>  
             <td style={{textAlign: 'center',width:'100%',display:'block'}}>
-            <FiChevronDown size={50} style={{color: theme.foreground}}/>
+            <FiChevronDown size={50} style={{color: theme.arrow}}/>
             </td>
           </button>
         </div>
@@ -256,7 +256,7 @@ function goToContact() {scrollToRef(contactRef);setOpen(false)}
           <img src={me} alt="That's me" className= "me"/>
           <div className="bio">
             <div className= "aboutCard" style={{backgroundColor:theme.secondary}}>
-              <p >I'm a student at Cornell University studying Information Science. I enjoy designing and coding applications.
+              <p >I'm a student at Cornell University studying Information Science. I enjoy designing and developing applications.
                 I'm also interested in data science and would love to delve deeper.
                 My interests are mainly dancing, basketball, and rock climbing.
               </p>
@@ -278,10 +278,10 @@ function goToContact() {scrollToRef(contactRef);setOpen(false)}
               </p>
               <ul>
                 <li style={{backgroundColor:theme.tertiary}}>React</li>
-                <li style={{backgroundColor:theme.tertiary}}>Gatsby</li>
                 <li style={{backgroundColor:theme.tertiary}}>React Native</li>
-                <li style={{backgroundColor:theme.tertiary}}>pandas</li>
-                <li style={{backgroundColor:theme.tertiary}}>scikit-learn</li>
+                <li style={{backgroundColor:theme.tertiary}}>Pandas</li>
+                <li style={{backgroundColor:theme.tertiary}}>Scikit-learn</li>
+                
               </ul>
             </div>
           </div>
@@ -331,10 +331,13 @@ function goToContact() {scrollToRef(contactRef);setOpen(false)}
         
         <div className="credits">
           <a className='center' href="https://github.com/em682/ocean-portfolio">Designed and built by Ethan Ma</a>
-          <p className='center'> Lottie Animations used from</p>
-          <p className='center'> @Elan Chez / LottieFiles </p>
-          <p className='center'> @Jorge Cortes S. / LottieFiles</p>
+          
         </div>
       </div>  
     </div>)
 }
+/*
+ Lottie Animations used from
+           @Elan Chez / LottieFiles
+           @Jorge Cortes S. / LottieFiles
+*/

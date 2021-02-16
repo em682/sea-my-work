@@ -13,7 +13,6 @@ import Switch from "../components/switch";
 import { AiFillLinkedin,AiFillGithub,AiFillInstagram,AiFillMail } from 'react-icons/ai';
 import HamburgerMenu from 'react-hamburger-menu';
 import {theme1,theme2} from "../style/theme.js";
-import Runlogo from '../assets/RunawayLogoTransparent.png'
 import mocks from '../assets/mockups.jpg'
 import music from '../assets/m.png'
 import cali from '../assets/cal.png'
@@ -107,9 +106,9 @@ function goToContact() {scrollToRef(contactRef);setOpen(false)}
                   Features include an infinite scrolling feed, messaging, and resource search/filter.
                 </p>
                 <div className="external">
-                  <a href="https://github.com/umcody/runaway">
-                    <FiGithub color="#fff" size={'calc(10px + 3vw)'} />
-                  </a>
+                  
+                    <FiGithub color="#929292" size={'calc(10px + 3vw)'} />
+                  
                   <a href="https://www.runawayapp.com">
                     <FiExternalLink color="#fff" size={'calc(10px + 3vw)'} />
                   </a>
